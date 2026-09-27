@@ -149,7 +149,7 @@ select.sel{height:44px;background:var(--panel);border:1px solid var(--line-2);bo
 .results-head h2{margin:0;font-family:var(--display);font-weight:500;font-size:30px;letter-spacing:-.01em}
 html[lang="zh"] .results-head h2{font-weight:700}
 .results-head p{margin:0;font-family:var(--mono);font-size:12px;color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(292px,1fr));gap:26px 22px;padding-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(292px,100%),1fr));gap:26px 22px;padding-bottom:40px}
 .card{position:relative;display:flex;flex-direction:column;background:transparent;border:0;padding:0;text-align:left;cursor:pointer;color:inherit;animation:rise .5s both}
 @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 .frame{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:var(--panel);box-shadow:0 0 0 1px var(--line);transition:box-shadow .25s,transform .25s}
@@ -282,6 +282,11 @@ html[lang="zh"] .panel h3{font-weight:700;font-size:22px}
 .vocab td:nth-child(2){color:var(--muted);width:30%}
 .vocab .say{cursor:pointer;color:var(--text)}
 .vocab .say:hover{color:var(--tally)}
+@media (max-width:640px){.panel{padding:18px}
+  .vocab,.vocab tbody,.vocab tr,.vocab td{display:block;width:auto}
+  .vocab tr{border-top:1px solid var(--line);padding:12px 0}
+  .vocab td,.vocab td:nth-child(2){border:0;padding:2px 0;width:auto}
+  .vocab td:first-child{white-space:normal;margin-bottom:2px}}
 .check{list-style:none;margin:0;padding:0;display:grid;gap:2px}
 .check li{display:grid;grid-template-columns:22px 1fr;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
 .check input{appearance:none;width:18px;height:18px;border:1.5px solid var(--line-2);border-radius:5px;margin:2px 0 0;cursor:pointer;display:grid;place-items:center}
@@ -465,7 +470,7 @@ const I18N = {
     eq_num:"Equipment", eq_title:'Tools, skills <em>&amp; reading.</em>', eq_lede:"Renderers that turn code into MP4, skills that package the workflow, and the guides worth reading first.",
     foot1:'Prompts, videos and thumbnails belong to their creators and are quoted with a link to the source; previews stream from the original posts. Curation, translations and the toolkit are CC BY 4.0. Creators can <a href="https://github.com/Li-Evan/awesome-opus-5.5-video-prompts/issues/new?template=creator-request.yml" target="_blank" rel="noopener">ask for removal</a> at any time.',
     foot2:'Community-maintained, not affiliated with Anthropic. <a href="https://github.com/Li-Evan/awesome-opus-5.5-video-prompts" target="_blank" rel="noopener">Source on GitHub</a> · <a href="https://github.com/Li-Evan/awesome-opus-5.5-video-prompts/blob/main/contributing.md" target="_blank" rel="noopener">Contribute</a>',
-    updated:"Data updated", open_on:"Open on", watch:"Watch the video ↗", remakes:"Also rendered from this prompt", tap_copy:"Click a line to copy it", copied_line:"Copied: ", sc:"SC."
+    updated:"Data updated", open_on:"Open on", watch:"Watch the video ↗", remakes:"Also rendered from this prompt", tap_copy:"Click or tap a line to copy it", copied_line:"Copied: ", sc:"SC."
   },
   zh: {
     star:"去 GitHub 点星", eyebrow:"Awesome 列表 · Opus 5.5 · 视频提示词",
