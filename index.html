@@ -670,12 +670,18 @@ function showReel(k){
   reelAt = (k + reel.length) % reel.length; const e = reel[reelAt], md = e.media || {};
   $("#vf-poster").src = md.thumb || ""; const v = $("#vf-video");
   v.style.opacity = 0; v.src = md.video || "";
-  if (!matchMedia("(prefers-reduced-motion:reduce)").matches && md.video) { v.play().then(() => v.style.opacity = 1).catch(() => {}); }
+  if (!matchMedia("(prefers-reduced-motion:reduce)").matches && md.video && !document.hidden) v.play().catch(() => {});
   $("#vf-title").textContent = L(e,"title");
   $("#vf-by").textContent = `${e.platform === "reddit" ? "u/" : "@"}${e.author} · 🔖 ${fmt((e.metrics||{}).bookmarks)} ${t("saves")}`;
   $("#vf-dots").querySelectorAll("button").forEach((b,i) => b.setAttribute("aria-current", String(i === reelAt)));
-  clearTimeout(reelTimer); reelTimer = setTimeout(() => showReel(reelAt + 1), 9000);
+  clearTimeout(reelTimer); if (!document.hidden) reelTimer = setTimeout(() => showReel(reelAt + 1), 9000);
 }
+$("#vf-video").addEventListener("playing", ev => ev.target.style.opacity = 1);
+// background tabs cannot autoplay: hold the reel while hidden, resume when the tab is shown
+document.addEventListener("visibilitychange", () => {
+  if (!reel.length) return;
+  if (document.hidden) { clearTimeout(reelTimer); $("#vf-video").pause(); } else showReel(reelAt);
+});
 $("#vf-video").addEventListener("timeupdate", ev => $("#vf-tc").textContent = "00:" + String(Math.floor(ev.target.currentTime)).padStart(2,"0"));
 $("#vf-open").onclick = () => { state.q = ""; state.cat = ""; state.kind = ""; state.plang = ""; state.sort = "saves"; state.shown = PAGE; $("#q").value = ""; renderFilters(); renderGrid(); openEntry(LIST.findIndex(x => x.id === reel[reelAt].id)); };
 
