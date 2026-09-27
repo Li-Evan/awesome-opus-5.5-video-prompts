@@ -1,0 +1,56 @@
+name: Suggest a prompt / 推荐提示词
+description: Point us to a post where a creator shared the prompt behind an Opus 5.5 video. 推荐一条公开了 Opus 5.5 视频提示词的帖子。
+title: 'Add: '
+labels:
+  - suggestion
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Please read the [contribution guidelines](https://github.com/Li-Evan/awesome-opus-5.5-video-prompts/blob/main/contributing.md) first. The prompt must be in the creator's own post, thread, or replies.
+
+        感谢推荐！可以用中文填写。请先看[贡献指南](https://github.com/Li-Evan/awesome-opus-5.5-video-prompts/blob/main/contributing.zh-CN.md)。提示词必须出现在作者本人的帖子、帖子串或回复里。
+  - type: input
+    id: url
+    attributes:
+      label: Creator's post / 作者原帖链接
+      description: The original post with the video. Not another list or gallery. 放视频的原帖，不要别人整理的列表。
+      placeholder: https://x.com/user/status/123
+    validations:
+      required: true
+  - type: input
+    id: prompt_url
+    attributes:
+      label: Where the prompt is, if different / 提示词所在位置（如不同）
+      description: For example the reply or thread post that contains the prompt. 例如写着提示词的那条回复。
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category / 分类
+      options:
+        - Showreels and Motion Design / 动效与作品集
+        - Product Launches and Ads / 产品发布与广告
+        - Explainers and Education / 科普与讲解
+        - History and Documentary / 历史与纪录
+        - Music Videos and Lyrics / MV 与歌词动画
+        - Stories, Hand-Drawn and Stop-Motion / 叙事、手绘与定格
+        - Opus on Itself / 让 Opus 讲自己
+        - 3D, Shaders and Worlds / 3D、着色器与世界
+        - Remakes and Transformations / 改编与复刻
+        - Not sure / 不确定
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Anything worth knowing / 补充说明
+      description: Tools, time, cost, or iterations the creator mentioned. 作者提到的工具、耗时、成本或迭代次数。
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist / 确认事项
+      options:
+        - label: I searched the list and open issues, and this prompt is not already there. 我搜索过，列表和 issue 里都还没有。
+          required: true
+        - label: The creator shared the prompt text, not just the video. 作者公开了提示词原文，不只是视频。
+          required: true

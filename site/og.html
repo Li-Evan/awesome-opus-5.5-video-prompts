@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="referrer" content="no-referrer">
+<title>Social card</title>
+<!-- Renders site/og.png (1200x630) and site/banner.png (1600x560). See scripts/render_cards.py. -->
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@500;600;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0b0a09;--base:#1c1814;--line-2:#3a352f;--text:#efe9df;--text-2:#c9c1b4;--muted:#8a8378;--tally:#ff5b35;--cream:#f4d9a8;
+  --display:"Bodoni Moda",Georgia,serif;--mono:"JetBrains Mono",monospace;--zh:"Noto Serif SC",serif;
+  --u:min(1vw,1.9vh)}
+*{box-sizing:border-box}
+html,body{margin:0;width:100vw;height:100vh;overflow:hidden;background:var(--ink);color:var(--text);-webkit-font-smoothing:antialiased}
+body{position:relative}
+body::before{content:"";position:absolute;inset:0;z-index:5;pointer-events:none;opacity:.07;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+body::after{content:"";position:absolute;inset:0;z-index:4;pointer-events:none;
+  background:radial-gradient(55% 75% at 6% 0%,rgba(255,91,53,.17),transparent 62%),radial-gradient(120% 100% at 50% 35%,transparent 58%,rgba(0,0,0,.6))}
+
+.copy{position:absolute;z-index:3;left:calc(var(--u)*5.2);top:calc(var(--u)*4.4)}
+.eyebrow{display:flex;align-items:center;gap:calc(var(--u)*1.1);font-family:var(--mono);font-size:calc(var(--u)*1.18);letter-spacing:.16em;text-transform:uppercase;color:var(--text-2)}
+.rec{display:inline-flex;align-items:center;gap:calc(var(--u)*.6);color:var(--tally);font-weight:600}
+.rec i{width:calc(var(--u)*.85);height:calc(var(--u)*.85);border-radius:50%;background:var(--tally);box-shadow:0 0 0 calc(var(--u)*.35) rgba(255,91,53,.18),0 0 calc(var(--u)*1.6) var(--tally)}
+.eyebrow b{color:var(--text);font-weight:600}
+h1{font-family:var(--display);font-weight:500;font-variation-settings:"opsz" 96;font-size:calc(var(--u)*7.4);line-height:.95;letter-spacing:-.02em;margin:calc(var(--u)*1.9) 0 0;white-space:nowrap}
+h1 em{font-style:italic;color:var(--tally)}
+.sub{display:flex;align-items:baseline;gap:calc(var(--u)*2.2);margin-top:calc(var(--u)*1.1)}
+.sub .en{font-family:var(--display);font-style:italic;font-size:calc(var(--u)*3.1);line-height:1.1;color:var(--cream)}
+.sub .zh{font-family:var(--zh);font-weight:500;font-size:calc(var(--u)*1.75);color:var(--text-2);letter-spacing:.04em}
+/* 1200x630 is narrower: let the title break before "code." and stack the subtitles */
+@media (max-aspect-ratio:2/1){h1 .br{display:block}.sub{flex-direction:column;gap:calc(var(--u)*1)}}
+@media (min-aspect-ratio:2/1){.strip{height:calc(var(--u)*27.5)}h1{font-size:calc(var(--u)*9.2)}.sub .en{font-size:calc(var(--u)*3.5)}.sub .zh{font-size:calc(var(--u)*1.95)}}
+
+.stats{position:absolute;z-index:3;right:calc(var(--u)*5.2);top:calc(var(--u)*4.4);text-align:right;font-family:var(--mono);font-size:calc(var(--u)*1.02);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);line-height:2}
+.stats b{display:block;font-family:var(--display);font-weight:500;font-size:calc(var(--u)*4.6);line-height:1;color:var(--text);letter-spacing:-.02em}
+.stats .n2{margin-top:calc(var(--u)*1)}
+.stats .n2 b{font-size:calc(var(--u)*2.6)}
+
+/* film strip */
+.strip{position:absolute;z-index:2;left:-8vw;right:-8vw;bottom:-2vh;height:calc(var(--u)*25);transform:rotate(-4deg);
+  background:var(--base);box-shadow:0 calc(var(--u)*-2) calc(var(--u)*8) rgba(0,0,0,.7)}
+.holes{position:absolute;left:0;right:0;height:calc(var(--u)*2.9);display:flex;align-items:center;gap:calc(var(--u)*1.25);padding-left:calc(var(--u)*.6);overflow:hidden}
+.holes.t{top:0}.holes.b{bottom:0}
+.holes i{flex:0 0 auto;width:calc(var(--u)*1.25);height:calc(var(--u)*1.3);border-radius:calc(var(--u)*.28);background:var(--ink);box-shadow:inset 0 1px 0 rgba(0,0,0,.6)}
+.frames{position:absolute;left:0;right:0;top:calc(var(--u)*2.9);bottom:calc(var(--u)*2.9);display:flex;gap:calc(var(--u)*1.1);padding:0 calc(var(--u)*1.1)}
+.fr{position:relative;flex:0 0 auto;height:100%;aspect-ratio:16/9;border-radius:calc(var(--u)*.3);overflow:hidden;background:#0e0c0b}
+.fr img{width:100%;height:100%;object-fit:cover;display:block}
+.fr::before{content:"";position:absolute;inset:auto 0 0 0;height:32%;background:linear-gradient(transparent,rgba(0,0,0,.72))}
+.fr span{position:absolute;left:calc(var(--u)*.8);bottom:calc(var(--u)*.6);font-family:var(--mono);font-size:calc(var(--u)*.95);letter-spacing:.08em;color:rgba(255,255,255,.9)}
+.fr.hot{outline:calc(var(--u)*.24) solid var(--tally);outline-offset:calc(var(--u)*-.24)}
+.fr.hot::after{content:"REC";position:absolute;right:calc(var(--u)*.7);top:calc(var(--u)*.7);font-family:var(--mono);font-size:calc(var(--u)*.9);font-weight:600;letter-spacing:.12em;color:#fff;background:var(--tally);padding:calc(var(--u)*.15) calc(var(--u)*.5);border-radius:calc(var(--u)*.3)}
+.edge{position:absolute;left:0;right:0;top:calc(var(--u)*2.9);transform:translateY(-100%);padding-left:calc(var(--u)*6);font-family:var(--mono);font-size:calc(var(--u)*.7);line-height:1;letter-spacing:.34em;color:#9a6a3c;opacity:.75;white-space:nowrap;overflow:hidden;z-index:1}
+</style>
+</head>
+<body>
+<div class="copy">
+  <div class="eyebrow"><span class="rec"><i></i>REC</span><span>Awesome · <b>Opus 5.5</b> · Video Prompts</span></div>
+  <h1>Every frame is <span class="br"></span><em>code.</em></h1>
+  <div class="sub"><span class="en">The prompt is the script.</span><span class="zh">每一帧都是代码，提示词就是剧本。</span></div>
+</div>
+<div class="stats"><b id="n"></b>verified prompts<div class="n2"><b id="c"></b>creators · EN / 中文</div></div>
+<div class="strip">
+  <div class="holes t"></div>
+  <div class="edge" id="edge"></div>
+  <div class="frames" id="frames"></div>
+  <div class="holes b"></div>
+</div>
+<script>
+// A hand-picked film strip reads better than the top-saved list, which is mostly white UI frames.
+const DEFAULT = "kaolti-092204,leo_xiaolei-305104,davidshulmanfl-842921,faroukzy-138551,makevoid-900023,minosdevs-251920,emollick-918334,lemomo_ai-242622,heyiammallik-293397,majidmanzarpour-373576,designbyfusun-559069,riku720720-063144";
+const ids = (new URLSearchParams(location.search).get("ids") || DEFAULT).split(",");
+document.querySelectorAll(".holes").forEach(h => h.innerHTML = "<i></i>".repeat(90));
+document.getElementById("edge").textContent = ("OPUS 5.5 ▸ 24 FPS ▸ EVERY FRAME IS CODE ▸ ").repeat(8);
+fetch("data.json").then(r => r.json()).then(d => {
+  const all = d.entries;
+  document.getElementById("n").textContent = all.length;
+  document.getElementById("c").textContent = new Set(all.map(e => e.author.toLowerCase())).size;
+  const pick = ids.map(id => all.find(e => e.id === id)).filter(e => e && e.media && e.media.thumb);
+  const box = document.getElementById("frames");
+  pick.forEach((e, i) => {
+    const f = document.createElement("div");
+    f.className = "fr" + (i === 2 ? " hot" : "");
+    f.innerHTML = `<img src="${e.media.thumb}" alt=""><span>A${String(i + 1).padStart(3, "0")} · @${e.author}</span>`;
+    box.appendChild(f);
+  });
+  Promise.all([...document.images].map(im => im.complete ? 0 : new Promise(r => { im.onload = im.onerror = r; })))
+    .then(() => document.fonts.ready).then(() => document.body.dataset.ready = "1");
+});
+</script>
+</body>
+</html>

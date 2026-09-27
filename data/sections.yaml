@@ -1,0 +1,12 @@
+# Category order. Each slug has data/<slug>.yaml with its entries.
+# Emojis must not contain U+FE0F: GitHub keeps it in heading anchors, awesome-lint drops it.
+categories:
+  - showreel
+  - launch
+  - explainer
+  - history
+  - music
+  - story
+  - self
+  - worlds
+  - remix

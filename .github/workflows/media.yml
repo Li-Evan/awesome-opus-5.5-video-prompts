@@ -1,0 +1,24 @@
+name: Media
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  media:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.2.0
+      - name: Find previews and thumbnails that no longer load
+        run: uv run scripts/check_media.py --report dead-media.md
+      - name: Open an issue if anything broke
+        if: hashFiles('dead-media.md') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue create --title "Broken previews $(date -u +%F)" --body-file dead-media.md --label media || gh issue create --title "Broken previews $(date -u +%F)" --body-file dead-media.md

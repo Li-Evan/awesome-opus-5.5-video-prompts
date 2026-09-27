@@ -1,0 +1,500 @@
+title: Remakes and Transformations
+title_zh: 改编与复刻
+emoji: 🔁
+description: Turning existing footage, screenshots, photos or a reference video into something new.
+description_zh: 把现成的视频、截图、照片或参考片改成新作品。
+entries:
+- id: emollick-918334
+  title: Anime-style remake of Claude's Voynich film
+  title_zh: 伏尼契手稿短片的动漫风重制
+  url: https://x.com/emollick/status/2103272686570918334
+  author: emollick
+  author_name: Ethan Mollick
+  platform: x
+  date: '2026-09-24'
+  description: A follow-up prompt that remade Claude's own Voynich Manuscript explainer film as a 2-minute anime-style, quick-cut version with a closing song, one-shot in Claude Projects.
+  description_zh: 追加一句提示词，把 Claude 自己做的伏尼契手稿讲解片重做成 2 分钟动漫风快剪版，结尾还有一首歌。
+  prompt: make the same message much more interesting to a social media audience that loves anime and quick clips and compressed learning
+  prompt_lang: en
+  prompt_zh: 把同样的内容改得对一群喜欢动漫、快节奏短片和压缩式学习的社交媒体观众更有吸引力
+  kind: one-shot
+  tools:
+  - claude-app
+  inputs:
+  - reference-video
+  note: 'Author: about 1 hour 20 minutes; about $80 at API prices, within his Max plan''s daily usage.'
+  note_zh: 作者称约 1 小时 20 分钟；按 API 价约 80 美元，在 Max 套餐当天额度内。
+  media:
+    thumb: https://pbs.twimg.com/amplify_video_thumb/2103272247418908672/img/Af9EtBVQ5ZZXOAP8.jpg
+    video: https://video.twimg.com/amplify_video/2103272247418908672/vid/avc1/480x270/0IRrQwgwVlnOWST7.mp4?tag=29
+    video_hd: https://video.twimg.com/amplify_video/2103272247418908672/vid/avc1/1280x720/voEQY2_RZx4YkdLZ.mp4?tag=29
+    duration: 127.3
+    width: 1920
+    height: 1080
+  metrics:
+    bookmarks: 642
+    likes: 1074
+    views: 98830
+    reposts: 62
+- id: sab8a-475686
+  title: Talking-head clip cut into a punchy edit
+  title_zh: 口播素材剪成快节奏短片
+  url: https://x.com/sab8a/status/2103144778481475686
+  author: sab8a
+  author_name: Sabba Keynejad
+  platform: x
+  date: '2026-09-24'
+  description: A raw talking-head clip turned into a fun, punchy 37-second edit with subtitles, graphics and music, using Opus 5.5 with the open-source OpenEdit tool.
+  description_zh: 把一段原始口播素材剪成 37 秒快节奏成片，带字幕、图形和音乐，用 Opus 5.5 加开源 OpenEdit。
+  prompt: Cut a raw talking-head clip into a punchy, fun edit with subtitles, graphics and music
+  prompt_lang: en
+  prompt_zh: 把一段原始口播素材剪成一支有冲击力、好玩的成片，配上字幕、图形和音乐
+  kind: one-shot
+  tools:
+  - fal
+  inputs:
+  - footage
+  note: 'Author: about 1 h 51 min; about $23 in tokens and $49 in fal usage.'
+  note_zh: 作者称约 1 小时 51 分钟，token 约 23 美元，fal 约 49 美元。
+  media:
+    thumb: https://pbs.twimg.com/amplify_video_thumb/2103144418165538817/img/7XT3rMnErm6GYZ3I.jpg
+    video: https://video.twimg.com/amplify_video/2103144418165538817/vid/avc1/480x270/1npZGfMiPhLrUyxl.mp4?tag=29
+    video_hd: https://video.twimg.com/amplify_video/2103144418165538817/vid/avc1/1280x720/LtgK4gbBu3nu016S.mp4?tag=29
+    duration: 37.3
+    width: 1920
+    height: 1080
+  metrics:
+    bookmarks: 581
+    likes: 288
+    views: 60703
+    reposts: 11
+- id: axtonliu-932956
+  title: Talking-head clip turned into line-art explainer
+  title_zh: 真人口播改线稿动画
+  url: https://x.com/AxtonLiu/status/2102827887732932956
+  author: AxtonLiu
+  author_name: Axton
+  platform: x
+  date: '2026-09-23'
+  description: An 83-second vertical talking-head video rebuilt with line-art animated B-roll and the speaker in a round picture-in-picture; Opus drew every frame in Python, audio and subtitles untouched.
+  description_zh: 83 秒竖屏口播改成线稿动画 B-roll，真人缩到右下角圆形画中画；线稿由 Opus 用 Python 逐帧画出。
+  prompt: |-
+    把 short-1.mp4 做成一条新的竖屏短片 short-1-v5.mp4：
+
+    1. 我的人像缩小成右下角的圆形画中画，能看清我在讲话，不遮字幕。
+    2. 主画面换成一段动画 B-roll，跟着我讲的内容走：我说到哪个概念，画面就画哪个概念。风格轻松有趣，线稿动画就可以，不要写实。
+    3. 原声、原字幕、时长都不变。
+  prompt_lang: zh
+  prompt_en: |-
+    Turn short-1.mp4 into a new vertical short, short-1-v5.mp4:
+
+    1. Shrink my portrait into a round picture-in-picture in the bottom-right corner, where you can see me talking, without covering the subtitles.
+    2. Replace the main frame with animated B-roll that follows what I say: whatever concept I am talking about, draw that concept. Keep the style light and fun; line-art animation is fine, nothing realistic.
+    3. Keep the original audio, original subtitles and length unchanged.
+  kind: brief
+  tools:
+  - claude-code
+  - python
+  inputs:
+  - footage
+  effort: high
+  note: 'Author: 28 min 53 s, with zero manual interventions.'
+  note_zh: 作者称用时 28 分 53 秒，全程没有人工介入。
+  media:
+    thumb: https://pbs.twimg.com/amplify_video_thumb/2102827850864934912/img/gvpyuocSy0AV1hip.jpg
+    video: https://video.twimg.com/amplify_video/2102827850864934912/vid/avc1/320x568/7ImeYEF97Q2cVC_o.mp4?tag=16
+    video_hd: https://video.twimg.com/amplify_video/2102827850864934912/vid/avc1/720x1280/fR3aZJQW64Mqc85s.mp4?tag=16
+    duration: 83.7
+    width: 1080
+    height: 1920
+  metrics:
+    bookmarks: 411
+    likes: 370
+    views: 31619
+    reposts: 44
+- id: sab8a-118409
+  title: Raw clip cut into a snappy social edit
+  title_zh: 原始素材剪成快节奏短视频
+  url: https://x.com/sab8a/status/2103591152847118409
+  author: sab8a
+  author_name: Sabba Keynejad
+  platform: x
+  date: '2026-09-25'
+  description: 'A 20-second social edit cut from raw footage with Open Edit: silences and filler words removed, reference-style subtitles, graphics and music.'
+  description_zh: 用 Open Edit 把原始素材剪成 20 秒社媒短视频：删掉停顿和口头禅，按参考样式加字幕，配图形和音乐。
+  prompt: Use Open Edit - Can you edit this video into a snappy, fast-paced social media video with silences and filler words removed, and add subtitles to the video in the style of the reference that I've given you. It needs to be a fun edit with subtitles, graphics and music
+  prompt_lang: en
+  prompt_zh: 使用 Open Edit - 你能把这段视频剪成一条节奏明快的社交媒体短视频吗？去掉停顿和口头禅，并按照我给你的参考样式给视频加字幕。要剪得有趣，带字幕、图形和音乐
+  prompt_url: https://x.com/sab8a/status/2103592371435016210
+  kind: one-shot
+  inputs:
+  - footage
+  - reference-video
+  media:
+    thumb: https://pbs.twimg.com/amplify_video_thumb/2103590867202342912/img/KoH7hKg8HDevaECW.jpg
+    video: https://video.twimg.com/amplify_video/2103590867202342912/vid/avc1/320x320/y62qbOgQhucdNugL.mp4?tag=29
+    video_hd: https://video.twimg.com/amplify_video/2103590867202342912/vid/avc1/1080x1080/0LD7ZVwTmXgOSI18.mp4?tag=29
+    duration: 19.8
+    width: 1080
+    height: 1080
+  metrics:
+    bookmarks: 302
+    likes: 217
+    views: 24174
+    reposts: 13
+- id: ehsanik-162993
+  title: Replay video of painting the Mona Lisa
+  title_zh: 临摹蒙娜丽莎的过程回放
+  url: https://x.com/ehsanik/status/2102885216692162993
+  author: ehsanik
+  author_name: Kiana Ehsani
+  platform: x
+  date: '2026-09-23'
+  description: A 31-second replay of Opus painting the Mona Lisa stroke by stroke in JS Paint, asked for as a follow-up after it drove Chrome to paint it.
+  description_zh: 31 秒回放：Opus 先操控 Chrome 在 JS Paint 里一笔笔画出蒙娜丽莎，再按追问把过程做成视频。
+  prompt: Ok now can you make a video of exactly what you just did? Showing every mouse movement and changes?
+  prompt_lang: en
+  prompt_zh: 好，现在你能把你刚才做的事原样做成一段视频吗？展示每一次鼠标移动和画面变化？
+  kind: pipeline
+  tools:
+  - claude-app
+  inputs:
+  - none
+  note: 'Author: the painting step took about 20 minutes.'
+  note_zh: 作者称绘画环节用了约 20 分钟。
+  media:
+    thumb: https://pbs.twimg.com/amplify_video_thumb/2102883642603380736/img/GlJU0XMsrqu9dlOY.jpg
+    video: https://video.twimg.com/amplify_video/2102883642603380736/vid/avc1/552x270/KwuFTJMWy6BoxwK9.mp4?tag=29
+    video_hd: https://video.twimg.com/amplify_video/2102883642603380736/vid/avc1/736x360/dR7GbEDsqd6iuUha.mp4?tag=29
+    duration: 31
+    width: 1368
+    height: 668
+  metrics:
+    bookmarks: 42
+    likes: 158
+    views: 27821
+    reposts: 7
+- id: stokebuilder-356793
+  title: Podcast cut filled with explainer animations
+  title_zh: 给播客成片插满讲解动画
+  url: https://x.com/stokebuilder/status/2103896101120356793
+  author: stokebuilder
+  author_name: victor
+  platform: x
+  date: '2026-09-26'
+  description: A multi-agent workflow that finds 35–50 moments in a podcast cut and adds on-brand full-screen HyperFrames animations with the speaker in picture-in-picture.
+  description_zh: 多 Agent 流程：在播客成片中找 35–50 处，插入统一品牌的全屏 HyperFrames 动画，保留画中画。
+  prompt: |-
+    Go through the entire [episode] cut and add full-screen animations and graphics wherever they help. Be aggressive and over-inclusive: 35–50 moments, at least 2 per chapter. The goal is to fill empty talking-head time, explain ideas, and create visual hooks.
+
+    Style. Pick an aesthetic that's genuinely interesting and very, very cool, built in JavaScript with HyperFrames and assembled in Tesseract. Inspiration (all JS, no image assets):
+
+    https://x.com/Voxyz_ai/status/2102531681450119426: paper, typewriter-tape labels, hand-drawn marks
+    https://x.com/donaldjewkes/status/2102801274173587569: halftone, manga and pixel print, kinetic data type
+
+    Stay inside the LegalQuants brand (read brands/legalquants/): charcoal, white and black only, Arial, and the supplied lockup top-right, static. Write a shared style bible and a component kit first, so every animation looks like the same show.
+
+    Moments I definitely want:
+
+    [LIST]
+
+    Rules
+
+    Whenever anything goes full-screen (animation, screen share or still), one of us is in a corner picture-in-picture, bottom-right, following whoever is talking.
+    No punch-ins or zooming on the cameras. Keep each speaker relatively centered.
+    Copy must be verbatim or faithful to what's said. Never invent facts, numbers or quotes.
+    Sync each animation's beats to the spoken words.
+    Keep each graphic inside one uncut stretch of audio, and leave a few seconds of faces between graphics.
+
+    Process
+
+    An Opus 5.5 agent at extra-high effort finds every timestamp where an animation could fill space and hook the viewer, with a concept for each.
+    Opus 5.5 at medium effort builds each animation.
+    Opus 5.5 at extra-high effort judges each one once on brand consistency with the others, visual interest, relevance to the narrative and creative judgment.
+    Only cues the judge considers egregiously bad go back for a fix. No blanket redo loops.
+    Assemble the full cut with PiP baked into every full-screen visual, and give me a folder of the individual animations.
+  prompt_lang: en
+  prompt_zh: |-
+    把整期 [episode] 成片从头过一遍，凡是有帮助的地方都加上全屏动画和图形。要激进、宁多勿少：35–50 个时间点，每章至少 2 个。目标是填满空洞的口播时段、讲清观点、制造视觉钩子。
+
+    风格。选一种真正有意思、非常非常酷的美学，用 JavaScript 和 HyperFrames 制作，在 Tesseract 里组装。灵感参考（全是 JS，没有图片素材）：
+
+    https://x.com/Voxyz_ai/status/2102531681450119426：纸张、打字机标签带、手绘记号
+    https://x.com/donaldjewkes/status/2102801274173587569：半调网点、漫画和像素印刷、动态数据字体
+
+    严格遵守 LegalQuants 品牌（读 brands/legalquants/）：只用炭灰、白色和黑色，字体 Arial，右上角放提供的组合标志，保持静止。先写一份共享的风格手册和一套组件库，让每个动画看起来都属于同一档节目。
+
+    我一定要的时间点：
+
+    [LIST]
+
+    规则
+
+    只要有内容全屏（动画、屏幕共享或静态图），我们中的一个人就以画中画出现在右下角，跟随正在说话的人。
+    不要对摄像机画面做推近或缩放。让每位说话人保持大致居中。
+    文案必须逐字引用或忠实于所说内容。绝不编造事实、数字或引语。
+    每个动画的节奏点都要与说出的话同步。
+    每个图形都要放在一段未剪断的连续音频之内，图形之间留几秒人脸画面。
+
+    流程
+
+    一个 extra-high effort 的 Opus 5.5 agent 找出每个可以用动画填补空白、抓住观众的时间戳，并为每个给出创意构思。
+    medium effort 的 Opus 5.5 制作每个动画。
+    extra-high effort 的 Opus 5.5 对每个动画评审一次，标准是与其他动画的品牌一致性、视觉趣味、与叙事的相关性以及创意判断。
+    只有评审认为特别糟糕的片段才返工修改。不要全面重做的循环。
+    组装完整成片，每个全屏画面都内嵌画中画，并给我一个包含各个单独动画的文件夹。
+  prompt_url: https://x.com/stokebuilder/status/2103896102894506424
+  kind: pipeline
+  tools:
+  - hyperframes
+  inputs:
+  - footage
+  - brand
+  media:
+    thumb: https://pbs.twimg.com/amplify_video_thumb/2103894869651689472/img/NX4NhFTUzwEBidTz.jpg
+    video: https://video.twimg.com/amplify_video/2103894869651689472/vid/avc1/480x270/Vm_DVmp9a_u688Ss.mp4?tag=29
+    video_hd: https://video.twimg.com/amplify_video/2103894869651689472/vid/avc1/1280x720/HIOsejzrJLWM5P2c.mp4?tag=29
+    duration: 15.8
+    width: 1920
+    height: 1080
+  metrics:
+    bookmarks: 19
+    likes: 12
+    views: 1654
+- id: madpencil_-753990
+  title: Comic-book motion graphic from mascot assets
+  title_zh: 漫画风吉祥物动效短片
+  url: https://x.com/madpencil_/status/2103449418460753990
+  author: madpencil_
+  author_name: madpencil_
+  platform: x
+  date: '2026-09-25'
+  description: A 10-second comic-book motion graphic with speech bubbles and SFX, made from a still render, character sheet and 10s clip via the author's unshared Claude skill.
+  description_zh: 10 秒漫画风动效，带对白气泡和拟声字。输入一张渲染图、角色设定图和 10 秒片段，用的是作者未公开的自制 skill。
+  prompt: fun motion graphic, comic book style, 10s
+  prompt_lang: en
+  prompt_zh: 有趣的动态图形，漫画书风格，10s
+  kind: one-shot
+  inputs:
+  - images
+  - footage
+  media:
+    thumb: https://pbs.twimg.com/amplify_video_thumb/2103449232661479424/img/H3ooMwHnLIlyvyn_.jpg
+    video: https://video.twimg.com/amplify_video/2103449232661479424/vid/avc1/480x270/7kXaJ4XtfRndfu_8.mp4?tag=29
+    video_hd: https://video.twimg.com/amplify_video/2103449232661479424/vid/avc1/1280x720/FcgQgkJH3Np6S2SZ.mp4?tag=29
+    duration: 15.1
+    width: 1920
+    height: 1080
+  metrics:
+    bookmarks: 5
+    likes: 24
+    views: 1065
+    reposts: 3
+- id: 0xevinho-436195
+  title: Crypto-themed pixel animation from a reference
+  title_zh: 照参考视频做的加密主题像素动画
+  url: https://x.com/0xEvinho/status/2103212966703436195
+  author: 0xEvinho
+  author_name: Evinho
+  platform: x
+  date: '2026-09-24'
+  description: A 20-second pixel-art animation remade from a reference video with a crypto twist; the reference clip plus one sentence was the whole input.
+  description_zh: 20 秒像素风动画：给一段参考视频，加一句话，让它照着做一个加密货币主题的版本。
+  prompt: make a similar version but with a crypto reference
+  prompt_lang: en
+  prompt_zh: 做一个类似的版本，但加入加密货币元素
+  kind: one-shot
+  inputs:
+  - reference-video
+  media:
+    thumb: https://pbs.twimg.com/amplify_video_thumb/2103212778534080512/img/5SGXqKXAHVCWDAzX.jpg
+    video: https://video.twimg.com/amplify_video/2103212778534080512/vid/avc1/480x270/d4KmUhscbnQgJP3F.mp4?tag=29
+    video_hd: https://video.twimg.com/amplify_video/2103212778534080512/vid/avc1/1280x720/uFf-Y-JqNUJXjXoX.mp4?tag=29
+    duration: 20
+    width: 1920
+    height: 1080
+    dark: true
+  metrics:
+    bookmarks: 4
+    likes: 6
+    views: 1700
+- id: majidmanzarpour-373576
+  title: Image to animated 3D game menu background
+  title_zh: 图片变 3D 动态游戏菜单背景
+  url: https://x.com/majidmanzarpour/status/2102544198335373576
+  author: majidmanzarpour
+  author_name: Majid Manzarpour
+  platform: x
+  date: '2026-09-22'
+  description: Upload a reference image and Opus rebuilds it as a fully procedural, animated three.js main-menu background in one HTML file.
+  description_zh: 上传一张参考图，Opus 把它重建成全程序化、会动的 three.js 游戏主菜单背景，单个 HTML 文件。
+  prompt: recreate this perfectly, fully procedural, animated, main menu background in three.js 3D single HTML file
+  prompt_lang: en
+  prompt_zh: 完美复刻这张图，做成全程序化、带动画的主菜单背景，用 three.js 3D，单个 HTML 文件
+  kind: one-shot
+  tools:
+  - threejs
+  inputs:
+  - images
+  media:
+    thumb: https://pbs.twimg.com/media/HS28q6mWMAAxONB.jpg?name=orig
+    width: 1456
+    height: 819
+  metrics:
+    bookmarks: 2
+    likes: 4
+    views: 955
+- id: abderrahmen_g-899031
+  title: Playful video from hand-drawn sketches
+  title_zh: 手绘草图变欢快短片
+  url: https://x.com/abderrahmen_g/status/2103103836541899031
+  author: abderrahmen_g
+  author_name: Abderrahmen Gharsallah
+  platform: x
+  date: '2026-09-24'
+  description: A playful JavaScript video with sound matched to the frames, built around the author's wife's hand-drawn sketches and loosely inspired by earlier sample videos.
+  description_zh: 用 JavaScript 做的欢快短片，声音与画面同步，素材是作者妻子的手绘草图，并参考了之前的示例视频。
+  prompt: 'You are a professional videographer. Create me a high-definition, creative, playful, and joyful video that you enjoy watching, that has sounds matching the frames using JavaScript. Use as much as possible of the input images—hand-drawn—to make it more creative and more authentic from input-pictures. You can also be inspired by, but not copy, the videos created by you in video-examples/, especially this: video-examples/twitter_claude.mp4. You''re really creative, so produce the best of what you can.'
+  prompt_lang: en
+  prompt_zh: 你是一名专业摄像师。用 JavaScript 为我做一段高清、有创意、俏皮又欢快、你自己也爱看的视频，声音要和画面匹配。尽可能多地使用输入的图片（手绘的），让它更有创意，也更贴近输入图片的原味。你也可以从 video-examples/ 里你之前做的视频中获得灵感，但不要照搬，尤其是这个：video-examples/twitter_claude.mp4。你很有创造力，拿出你最好的作品。
+  kind: brief
+  inputs:
+  - images
+  - reference-video
+  note: 'Author: about 1 h 20 min.'
+  note_zh: 作者称耗时 1 小时 20 分钟。
+  media:
+    thumb: https://pbs.twimg.com/amplify_video_thumb/2103100160729321472/img/h7zcYXpfr00s_GQD.jpg
+    video: https://video.twimg.com/amplify_video/2103100160729321472/vid/avc1/480x270/ysPn4LeNt-zHtbjH.mp4?tag=29
+    video_hd: https://video.twimg.com/amplify_video/2103100160729321472/vid/avc1/1280x720/TYGeMkmA5XrXkVqV.mp4?tag=29
+    duration: 78
+    width: 1920
+    height: 1080
+  metrics:
+    bookmarks: 1
+    likes: 1
+    views: 110
+- id: supremebeme-306746
+  title: Brainrot video about terminal addiction
+  title_zh: 终端上瘾 brainrot 视频
+  url: https://x.com/supremebeme/status/2103272941832306746
+  author: supremebeme
+  author_name: Supreme
+  platform: x
+  date: '2026-09-24'
+  description: A 46-second brainrot-style video about being hooked on AI in the terminal, built from an article the author fed in with the prompt.
+  description_zh: 46 秒 brainrot 风格短片，讲离不开终端、对 AI 上瘾，素材是作者一并喂进去的一篇文章。
+  prompt: make a brainrot video about the terminal. i can't escape it. ai is so addictive.
+  prompt_lang: en
+  prompt_zh: 做一个关于终端的 brainrot 视频。我逃不掉它。AI 太让人上瘾了。
+  kind: one-shot
+  inputs:
+  - script
+  media:
+    thumb: https://pbs.twimg.com/amplify_video_thumb/2103272429724528640/img/XXawVzlE98ZowBcA.jpg
+    video: https://video.twimg.com/amplify_video/2103272429724528640/vid/avc1/320x568/Yky1Xw52S0MNsHIu.mp4?tag=29
+    video_hd: https://video.twimg.com/amplify_video/2103272429724528640/vid/avc1/720x1280/FyKUEi81ocrz4VUn.mp4?tag=29
+    duration: 46.0
+    width: 1080
+    height: 1920
+  metrics:
+    bookmarks: 1
+    likes: 4
+    views: 366
+- id: kiana_liang0609-557220
+  title: Parkour jump with frame-by-frame look swaps
+  title_zh: 逐帧换装的跑酷子弹时间
+  url: https://x.com/Kiana_Liang0609/status/2103035980068557220
+  author: Kiana_Liang0609
+  author_name: Kiana Liang
+  platform: x
+  date: '2026-09-24'
+  description: A 10-second bullet-time parkour jump generated with Seedance 2.5, then restyled frame by frame; Opus redrew 189 frames across 11 looks.
+  description_zh: 先用 Seedance 2.5 生成跑酷子弹时间镜头，再逐帧换风格；Opus 重绘了 189 帧、11 种造型。
+  prompt: |-
+    Step 1: Generate the base shot with Seedance 2.5 text-to-video. A parkour kid leaps off a rooftop edge across the gap between two buildings. At the peak, time almost stops and the camera orbits halfway around him (bullet time). Then time resumes, he lands on the opposite roof and rolls to his feet.
+
+    Step 2: Pull frames from the base, restyle them frame by frame with an image model so he flips through different looks mid-action, Everything Everywhere All at Once style, then automatically cut it back into one full video.
+
+    When to start, how often to switch, which looks: your call. At least 6 looks. Action, pose, framing and background must match the base. Only the character's look changes.
+  prompt_lang: en
+  prompt_zh: |-
+    第 1 步：用 Seedance 2.5 文生视频生成基础镜头。一个跑酷少年从屋顶边缘跃起，飞越两栋楼之间的空隙。到最高点时，时间几乎停住，镜头绕着他转半圈（子弹时间）。随后时间恢复，他落到对面屋顶，翻滚一圈站起身。
+
+    第 2 步：从基础镜头里抽帧，用图像模型逐帧重绘风格，让他在动作中途不断切换造型，像《瞬息全宇宙》那样，然后自动剪回一段完整视频。
+
+    什么时候开始换、多久换一次、换成哪些造型，由你决定。至少 6 种造型。动作、姿势、构图和背景必须和基础镜头一致。只有角色的造型会变。
+  kind: pipeline
+  tools:
+  - seedance
+  - gpt-image
+  inputs:
+  - none
+  note: 'Author: one shot per generation.'
+  note_zh: 作者称每一步生成都只跑了一次。
+  media:
+    thumb: https://pbs.twimg.com/amplify_video_thumb/2103035308782870528/img/meLCmoOBQTiCIoXQ.jpg
+    video: https://video.twimg.com/amplify_video/2103035308782870528/vid/avc1/320x400/8vCJxxQZWIOqwmHO.mp4?tag=29
+    video_hd: https://video.twimg.com/amplify_video/2103035308782870528/vid/avc1/720x900/s6JJmzihKiJpSsKC.mp4?tag=29
+    duration: 10.0
+    width: 1080
+    height: 1350
+  metrics:
+    likes: 5
+    views: 880
+- id: gemu_book-591563
+  title: note article turned into a 30-second animation
+  title_zh: note 文章变 30 秒动画
+  url: https://x.com/GEMu_book/status/2104001561718591563
+  author: GEMu_book
+  author_name: GEMu@読書系AITuber（見習い）
+  platform: x
+  date: '2026-09-27'
+  description: A 30-second JavaScript animation adapted from a note.com blog post, made from a one-line Japanese prompt plus the article link.
+  description_zh: 一句日文提示词加文章链接，用 JavaScript 把 note 文章做成 30 秒动画。
+  prompt: 以下のnote記事を30秒くらいの動画としてJavaScriptで作成してください！
+  prompt_lang: ja
+  prompt_en: Please make the following note article into a video of about 30 seconds using JavaScript!
+  prompt_zh: 请用 JavaScript 把下面这篇 note 文章做成 30 秒左右的视频！
+  kind: one-shot
+  inputs:
+  - script
+  media:
+    thumb: https://pbs.twimg.com/amplify_video_thumb/2104001328892760064/img/cp6t4Z7ZA7Jnv3JU.jpg
+    video: https://video.twimg.com/amplify_video/2104001328892760064/vid/avc1/480x270/JQxzm3c-XeA7aAF4.mp4?tag=29
+    video_hd: https://video.twimg.com/amplify_video/2104001328892760064/vid/avc1/1280x720/VwT0eQ7dQ0s5J2um.mp4?tag=29
+    duration: 30
+    width: 1920
+    height: 1080
+  metrics:
+    likes: 1
+    views: 74
+- id: _gillex-798756
+  title: '"Make this better" on an existing demo video'
+  title_zh: 一句「改好点」重做演示视频
+  url: https://x.com/_Gillex/status/2104077550720798756
+  author: _Gillex
+  author_name: Gillex
+  platform: x
+  date: '2026-09-27'
+  description: The author's own hand-made product demo, handed to Opus 5.5 with a three-word prompt and rebuilt as a new video.
+  description_zh: 把自己花 45 分钟做的产品演示视频交给 Opus 5.5，只说一句「改好点」，重做出新版本。
+  prompt: make this better
+  prompt_lang: en
+  prompt_zh: 把这个做得更好
+  kind: one-shot
+  inputs:
+  - footage
+  note: 'Author: 15 minutes at most.'
+  note_zh: 作者称最多 15 分钟。
+  media:
+    thumb: https://pbs.twimg.com/amplify_video_thumb/2104076166936080384/img/Y3l-KXdYX9tDuScm.jpg
+    video: https://video.twimg.com/amplify_video/2104076166936080384/vid/avc1/480x270/stEoq2x0zb7dau8a.mp4?tag=29
+    video_hd: https://video.twimg.com/amplify_video/2104076166936080384/vid/avc1/1280x720/yiMCUx1N9KNF-rYs.mp4?tag=29
+    duration: 28.6
+    width: 1920
+    height: 1080
+    dark: true
+  metrics:
+    likes: 2
+    views: 84

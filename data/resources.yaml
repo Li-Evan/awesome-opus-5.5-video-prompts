@@ -1,0 +1,139 @@
+# Tools, skills and guides. Stars checked 2026-09-27; the weekly CI refreshes nothing, update by hand.
+# Other people's prompt/video lists are discovery sources only and are never linked here.
+groups:
+  - slug: renderers
+    title: Renderers and Frameworks
+    title_zh: 渲染器与框架
+    entries:
+      - name: HyperFrames
+        url: https://github.com/heygen-com/hyperframes
+        description: HeyGen's open-source HTML-to-video renderer built for agents. Scenes are HTML/CSS/GSAP, captured frame by frame in headless Chrome and encoded with ffmpeg. Install as a skill with `npx skills add heygen-com/hyperframes`.
+        description_zh: HeyGen 开源的 HTML 转视频渲染器，专为 Agent 设计。场景用 HTML/CSS/GSAP 写，无头 Chrome 逐帧截图，ffmpeg 编码。用 `npx skills add heygen-com/hyperframes` 安装成 skill。
+        stars: 53522
+        license: Apache-2.0
+      - name: Remotion
+        url: https://github.com/remotion-dev/remotion
+        description: Make videos programmatically with React. Pairs with the official Agent Skills below; companies need a license, see remotion.dev.
+        description_zh: 用 React 写视频。配合下面的官方 Agent Skills 使用；公司商用需要购买许可，见 remotion.dev。
+        stars: 60707
+      - name: Remotion Agent Skills
+        url: https://github.com/remotion-dev/skills
+        description: Official skills that teach Claude Code and other agents to build Remotion videos. Install with `npx skills add remotion-dev/skills`.
+        description_zh: Remotion 官方 skill，教 Claude Code 等 Agent 用 Remotion 做视频。安装命令 `npx skills add remotion-dev/skills`。
+        stars: 4739
+      - name: Manim (3Blue1Brown)
+        url: https://github.com/3b1b/manim
+        description: The animation engine behind 3Blue1Brown. Most prompts here leave the renderer to Opus; name Manim when you want a 3Blue1Brown-style math explainer.
+        description_zh: 3Blue1Brown 的动画引擎。本列表里多数提示词不指定渲染器，想要 3Blue1Brown 风格的数学讲解时点名用它。
+        stars: 94308
+        license: MIT
+      - name: Manim Community
+        url: https://github.com/ManimCommunity/manim
+        description: Community-maintained Manim with better docs and a stable API; easier for agents to install.
+        description_zh: 社区维护版 Manim，文档更全、API 更稳定，Agent 安装起来更省事。
+        stars: 41078
+        license: MIT
+      - name: three.js
+        url: https://github.com/mrdoob/three.js
+        description: The 3D library that prompts in the 3D section name most often, for scenes, shaders and camera flythroughs.
+        description_zh: 3D 板块的提示词里被点名最多的库，用来做场景、着色器和镜头穿梭。
+        stars: 115973
+        license: MIT
+      - name: p5.js
+        url: https://github.com/processing/p5.js
+        description: Creative-coding library for generative and hand-drawn looks; name it when you want sketchy, organic motion.
+        description_zh: 创意编程库，适合生成艺术和手绘质感；想要随手画、有机感的动效时可以点名用它。
+        stars: 24055
+
+  - slug: skills
+    title: Video Skills for Agents
+    title_zh: 做视频的 Agent Skill
+    entries:
+      - name: brag
+        url: https://github.com/latent-spaces/brag
+        description: Point it at the project you just built and it writes and renders a short launch video about it.
+        description_zh: 对着你刚做完的项目运行，它会自己写一支发布短片并渲染出来。
+        stars: 10463
+        license: MIT
+      - name: Hypit
+        url: https://github.com/hypit-ai/hypit
+        description: Clones the production structure of an existing viral video (shots, captions, sound design) with coding agents, then swaps in your content. The remix counterpart to drawing from scratch.
+        description_zh: 用编程 Agent 复刻一条现成爆款视频的制作结构（镜头、字幕、音效），再换成你的内容。和从零画是同一范式的两端。
+        stars: 16581
+      - name: onetake
+        url: https://github.com/feitangyuan/onetake
+        description: Motion films that never cut to the next slide; every beat grows out of the previous one. Built as a reaction to loose, slideshow-like Opus videos.
+        description_zh: 不切到「下一页幻灯片」的动效短片，每一拍都从上一拍里长出来。作者正是针对「很多 Opus 视频其实是松散拼接」做的。
+        stars: 471
+      - name: guizang-product-video-skill
+        url: https://github.com/op7418/guizang-product-video-skill
+        description: Makes software update and launch videos from your real product components and design language, with storyboard copy, original music and sound effects.
+        description_zh: 歸藏的产品视频 skill：复用真实产品组件和设计语言做软件更新宣传片，包含分镜文案、原创配乐和音效。
+        stars: 450
+      - name: JavaScript animation skills
+        url: https://github.com/iart-ai/javascript-animation-skills
+        description: The "every frame drawn in JavaScript" technique packaged as skills, with canvas drawing and Web Audio music on one timeline.
+        description_zh: 把「每一帧都用 JavaScript 画」的做法打包成 skill，画面和 Web Audio 配乐共用一条时间线。
+        stars: 6
+        license: MIT
+      - name: lemo-opuscar
+        url: https://github.com/lemomo-ai/lemo-opuscar
+        description: One creator's open library of Opus 5.5 video works with prompts, design styles and directing notes.
+        description_zh: 一位创作者公开的 Opus 5.5 视频作品库，附提示词、设计风格和导演笔记。
+
+  - slug: assets
+    title: References and Assets
+    title_zh: 参考片与素材
+    entries:
+      - name: whatships
+        url: https://whatships.com
+        description: A directory of launch videos from X, useful as style references to name in a prompt.
+        description_zh: 收录 X 上发布视频的目录，适合挑来当提示词里点名的参考风格。
+      - name: 21st.dev
+        url: https://21st.dev
+        description: Real React/Tailwind UI components, so product videos show believable interfaces instead of invented ones.
+        description_zh: 真实的 React/Tailwind 界面组件，让产品视频里的界面看起来可信，而不是 AI 现编的。
+      - name: Mixkit
+        url: https://mixkit.co/free-stock-music/
+        description: Free music the popular templates ask for (around 120 BPM with a drop).
+        description_zh: 热门模板常要的免费音乐（120 BPM 左右、带高潮）。
+      - name: Pexels Videos
+        url: https://www.pexels.com/videos/
+        description: Free stock footage for backgrounds and textures.
+        description_zh: 免费视频素材，用作背景和质感层。
+
+  - slug: guides
+    title: Guides and Analysis
+    title_zh: 教程与分析
+    entries:
+      - name: The six-step workflow behind "one prompt" videos
+        name_zh: 「一句 prompt」视频背后的六步流程
+        url: https://x.com/rexan_wong/status/2103707054108299437
+        description: The most saved how-to we found (15k+ bookmarks); the basis of the workflow in this list.
+        description_zh: 我们找到的收藏最多的方法帖（1.5 万+ 收藏），本列表的六步导演法以它为底。
+      - name: Why one-shot output is slop
+        name_zh: 为什么一句话的默认输出是「垃圾」
+        url: https://x.com/DavidKPiano/status/2103919227853783445
+        description: Seven symptoms of default animation, from a motion-library author.
+        description_zh: 一位动画库作者总结的默认动画七个毛病。
+      - name: Claude Code motion graphics and video with Opus 5.5
+        url: https://charliehills.substack.com/p/claude-code-motion-graphics
+        description: Step-by-step tutorial, from picking one motion to fixing it round by round.
+        description_zh: 分步教程：从选一个动作开始，一轮一轮改到位。
+      - name: Opus 5.5 Motion Graphics (16 examples)
+        url: https://charliehills.substack.com/p/opus-55-motion-graphics
+        description: Sixteen downloadable motion graphics and the three-step method behind them.
+        description_zh: 16 个可下载的动效案例，以及背后的三步做法。
+      - name: How AI JavaScript animation works
+        name_zh: 每一帧都用 JavaScript 画的动画是怎么做的
+        url: https://www.iart.ai/blog/ai-javascript-animation
+        description: The clearest explanation of the technique, with a draw(t) function, seeded randomness, Web Audio, and a comparison with keyframes and video models.
+        description_zh: 把机制讲得最清楚的一篇，涵盖 draw(t) 纯函数、固定随机种子、Web Audio 配乐，以及和关键帧、视频模型的对比。
+      - name: Opus 5.5 做视频没有一帧是「生成」的
+        url: https://post.m.smzdm.com/p/apqvem82/
+        description: Chinese analysis framing it as deterministic rendering versus probabilistic sampling, with where it fails (real people, texture, lighting).
+        description_zh: 用「确定性渲染 vs 概率性抽卡」讲清楚它和视频模型的区别，也讲了边界：真人、质感、光影仍是视频模型的主场。
+      - name: "Opus 5.5 is good at explainer videos (Hacker News)"
+        url: https://news.ycombinator.com/item?id=49836374
+        description: Discussion thread with practitioners comparing costs, tooling and failure cases.
+        description_zh: Hacker News 讨论帖，从业者在里面对比成本、工具和翻车案例。

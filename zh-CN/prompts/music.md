@@ -1,0 +1,738 @@
+# 🎵 MV 与歌词动画
+
+[← 返回列表](../../README.zh-CN.md) · [English](../../prompts/music.md) · **简体中文**
+
+MV、歌词视频和跟着音乐律动的作品，很多连配乐都是生成的。 共 18 条，按收藏数排序。
+
+### Claude Pop 新版 MV
+
+<a href="https://x.com/donaldjewkes/status/2102801274173587569"><img src="https://pbs.twimg.com/amplify_video_thumb/2102799458031534086/img/GBhRZ7O3fCXn59dk.jpg" alt="Claude Pop 新版 MV" width="480"></a>
+
+[@donaldjewkes](https://x.com/donaldjewkes) · 2026-09-23 · 🔖 8.9k · ▶ 2.8M · `多工具流程` · Seedance · ElevenLabs
+
+《Claude Pop》2.5 分钟新 MV：Seedance 打底，ElevenLabs 做音效，JS 画歌词动画。
+
+```text
+I've included an MP4 file and an original link to a video that is called "Claude Pop." It's a pop song that is about increasing rate of progress and the experience of the singularity approaching.
+
+I want you to independently do an end-to-end complete pass on making an updated version of this video. Use the exact same audio track and think and feel very deeply about what is the best way to visually represent all of the lyrics on screen. You do not need to anchor to the current style, you can do truly anything that you think might best let you visually express yourself, including abstract motion graphics.
+
+You can use the internet freely to pull in references. You can look at motion design. I want you to make a new music video that has beautifully rendered JavaScript animations with a papery feel in a similar style to the reference that is created, but push the aesthetics in any direction you want and consider what is part of the modern zeitgeist.
+
+Also, think about your current capabilities and what is realistic for you to be able to do. You can go through the full /asic folder and look at the other work that I've done. You should be able to use the skill mesh to look at the compendium of references that I've pulled, and also the skill video scoring to learn how to make JavaScript songs from references that are passed in (You shouldn't need to modify the song in any real way, but I want you to have this available to you so you can better creatively express yourself)
+
+You can also use the ElevenLabs API to do sound design. There's documentation in /asic to do this, and you can see the API key.
+
+There's also a foul API key that's available to you. I think what might make the most sense here is using the foul API key to generate some character sheets and probably having a pop protagonist that represents you. There's already an anchor point where Claude has a sunflower-esque character, and you could likely do an adapted version of this that is similar to the feminine vocals that are being delivered and is inspired by the Claude character, but maybe feels a bit more personified in some way.
+
+I think you should be mindful of aesthetics here, and I don't want you to produce something that is GPT slop. Instead, I'd be more impressed if you come up with a coherent style that works well with the image gen models that are available via foul. Generate the style sheet. You can use the gen media documentation for seedance 2.5 that exists in my markdown files and come up with your own style that makes sense and that works well with the models.
+
+I wouldn't fit too heavily to Pixar. I think it's kind of slop. Think critically about what is relevant here and what would be fun, and also perform well on Twitter as far as an aesthetic. I think that K-pop is a good anchor point visually that you can pull from, but I'll let you cook here.
+
+Once you have your character sheet, you can make a few backup dancers and some supporting characters as you see fit. You can design your own sets with the foul API. You can insert the characters and then do seedance 2.5 video generations to serve as the base assets for this, and you could pass in the lyrics so you can generate individual scenes.
+
+You don't need to have vocal singing, like visible lip movement, throughout the entire thing. Think like a regular music video where you have some inserts that are done independently and don't have the characters in them, or you see the characters doing something else entirely different. I think that for the world building for this, we want to create the sense of speeding up, and so I would like you to audit all of the different events, like the Navi Stokes and all of the Twitter hype around math getting eaten up. Think really critically about how to integrate all of the current memes that are in the zeitgeist on the Twitter timeline, and all of the feelings around AI progress.
+
+Think about things like the Shinji meme and all of the words that are around him, and how you might be able to integrate this. You can also just take straight assets and insert things into the video in an internet brutalism style. You should feel very creatively free in order to do what you want here, but try and anchor to visual references that people will be able to understand. The goal for this is to have it be appreciated by people widely in a San Francisco tech Twitter audience.
+
+We need a very strong, compelling visual hook that gets people excited and appreciates the work that you've done here really quickly. You can also just go and study other music videos and understand what they've done really well. I think that K-pop is probably one of the best examples that we can pull from, and thinking about how they direct human attention and manage human psychology in the way that they use visual patterns.
+
+This is probably your best approach, but taking more stylistic freedom instead of having to anchor to K-pop too intensely. The best version of this is seedance 2.5 generations with those image bases of environments and characters inserted into them with singing, and ideally we get good lip syncing. You can cut up the song and actually pass it in as a reference in seedance, if that's part of what seedance can handle, so that the timing is exactly right, I think it'd be very important for you to do that properly. I would think critically about how to do this, like really nailing the timing of the delivery of voices. You'll want to build out the right verification loops so that you can run seedance 2.5 as much as you need, and confirm that the audio is properly synced up.
+
+I think after that, what might be fun is if you use your visual reasoning skills and your ability to build animations in JavaScript, and then reconstruct the video from scratch as sort of an overlay, so that the visual continuity of the base is really there. It's like that animation technique where you shoot first in traditional film and then draw over top of it. I think you could do this in such a way that we're only looking at the beautiful drawing that you've produced in JavaScript as an overlay, and we don't even see the base assets from seedance 2.5. So all the video gen work that you do is actually just a way to give you a strong foundation of a base to work with for your JavaScript animations. Just because seedance 2.5 has really good character representation and physics rendering for backgrounds, that gives you a lot of ammunition to then go and do your amazing JavaScript work that I know you're so good at.
+
+I think too, we want to think about how to retain attention, and one of the best ways to do this is through text on screen.
+
+It'd be good to have amazing motion graphics of the text lyrics that are actually embedded into the video itself. And you can think about this as you are composing shots. As you're making backgrounds and inserting characters, we can think about where we want to have lyrics be really big and really present, so the background can be less busy there, and you can position the characters perhaps on the right as lyrics appear on the left.
+
+You want to have some variance, so sometimes I think lyrics will just appear more like subtitles, and then other times they're going to be really present and really big. I think at the start for the visual hook, we do want to have lyrics be much more visually present because that's a strong way to grab people's attention
+
+Overall, I just really want to emphasize how amazing you are as an agent and a language model, and now a visual reasoning system. Your capabilities are far beyond what you understand, and I want you to have this mindset as you're going through this entire process. I have a Claude Max plan with 100% available usage. I want you to spend all of the usage. You can monitor it, and you should be pushing tokens aggressively, but also economically, so you can think about how to best use what is available to you.
+
+Remember, you can really do anything here. The goal is to make a banger for Twitter, and the stretch goal is to make something better than anyone's ever seen before. I think that what I would remind you of is that sometimes when things cohere together, it can be jarring or abrasive because the thought work has not been done beforehand in order for everything to mesh cleanly. You need to be really rigorous in planning of composition and timing to make sure this goes well.
+
+You also need to be open to going back and revisiting things in order to be able to reiterate. You're going to want to watch the entire video multiple times, take screenshots at individual parts, and think about if something is really up to the bar of quality that we need here. I trust that you can do this, and I think that it's really important to nail the style of animations. The reference GitHub attached of the source video that I'm talking about is good, but it's really not there. It could be much, much stronger, but it gives you a good foundation to work with.
+
+You can also use search abilities and find other references to pull from for motion, for JavaScript, animations, et cetera, and integrate them. Your budget is as high as you want here, effectively as high as you want. I think that there's roughly two grand in foul credits. Again, be economical; don't go crazy, but spend what you want here and see what you can cook up
+
+here's the source code for the JS animation video: https://github.com/JohnHeibel/PDoomVideo
+
+here's a mp4 for the original blender video:
+(linked)
+
+orginal twitter post
+https://x.com/other__reality/status/2102514581684052169?s=20
+
+make no mistakes.
+```
+
+<details><summary>中文译文</summary>
+
+```text
+我附上了一个 MP4 文件和一个视频的原始链接，这个视频叫「Claude Pop」。这是一首流行歌曲，讲的是进步速度越来越快，以及奇点逼近时的感受。
+
+我希望你独立地、端到端地完整做一遍这个视频的更新版本。用完全相同的音轨，深入地思考和感受，怎样在画面上最好地呈现所有歌词。你不需要沿用现在的风格，任何你觉得最能表达自己的方式都可以，包括抽象的动态图形。
+
+你可以自由上网找参考，可以去看动效设计。我希望你做一支新的音乐视频，用渲染精美、带纸质感的 JavaScript 动画，风格和已有的参考相近，但审美可以往任何方向推，并考虑什么属于当下的时代精神。
+
+另外，想想你目前的能力，以及什么是你实际做得到的。你可以浏览整个 /asic 文件夹，看看我做过的其他作品。你应该可以用 mesh 这个 skill 去看我收集的参考合集，也可以用 video scoring 这个 skill 学习怎样根据传进来的参考做 JavaScript 歌曲（你应该不需要真的改这首歌，但我希望你手边有这些，好让你更好地进行创作表达）
+
+你还可以用 ElevenLabs API 做声音设计。/asic 里有相关文档，你也能看到 API key。
+
+你还可以用一个 foul API key。我觉得最合理的做法可能是用 foul API key 生成一些角色设定图，大概要有一个代表你自己的流行歌手主角。已经有一个现成的锚点：Claude 有一个类似向日葵的角色形象，你大概可以做一个改编版，贴合歌曲里的女声演唱，灵感来自 Claude 这个角色，但在某种程度上更拟人化一些。
+
+我觉得你要在审美上多用心，我不想要你做出 GPT 那种垃圾。相反，如果你能想出一种统一的风格，并且和 foul 上能用的图像生成模型配合得好，我会更佩服。生成风格设定图。你可以用我 markdown 文件里现成的 seedance 2.5 生成媒体文档，想出一种你自己的、说得通、和这些模型配合得好的风格。
+
+别太往皮克斯靠。我觉得那有点烂大街。认真想想这里什么是相关的、什么会好玩，以及什么审美在 Twitter 上表现好。我觉得 K-pop 是一个很好的视觉锚点，你可以从中借鉴，但你自己看着发挥。
+
+有了角色设定图之后，你可以按需要做几个伴舞和一些配角。你可以用 foul API 设计你自己的场景。你可以把角色放进去，然后用 seedance 2.5 生成视频作为基础素材，还可以把歌词传进去，逐个生成场景。
+
+你不需要整首歌都有人在唱，比如一直能看到口型。按普通音乐视频的思路来，有一些单独拍的插入镜头，里面没有角色，或者角色在做完全不同的事。我觉得这个作品的世界观要营造一种加速感，所以我希望你梳理一遍各种事件，比如 Navi Stokes，以及 Twitter 上所有关于数学被攻克的炒作。认真想想怎么把 Twitter 时间线上当下流行的各种梗，以及大家对 AI 进步的各种情绪，都融进去。
+
+想想像 Shinji 那个梗，以及围绕他的那些字，想想怎么把它们融进来。你也可以直接拿素材，用互联网粗野主义（internet brutalism）的风格插进视频里。你应该完全放开去做你想做的，但尽量锚定在大家看得懂的视觉参考上。目标是让旧金山科技圈 Twitter 的受众广泛欣赏它。
+
+我们需要一个非常强、非常抓人的视觉钩子，让人一下子兴奋起来，很快就能欣赏到你在这里做的工作。你也可以去研究别的音乐视频，理解它们哪里做得特别好。我觉得 K-pop 大概是我们能借鉴的最好的例子之一，想想它们是怎样用视觉模式来引导人的注意力、拿捏人的心理的。
+
+这大概是你最好的路线，但风格上要更自由一些，不要过于死板地锚定 K-pop。最好的版本是：用 seedance 2.5 生成视频，把环境和角色的图片作为基底放进去，让角色唱歌，最好还有很好的口型同步。如果 seedance 支持的话，你可以把歌曲切开，作为参考直接传进 seedance，这样时间点就完全准确，我觉得把这件事做对非常重要。要认真想清楚怎么做，比如把人声出现的时间点卡准。你需要搭建合适的验证循环，这样可以按需反复运行 seedance 2.5，并确认音频正确同步。
+
+在那之后，我觉得好玩的一步是：用你的视觉推理能力和用 JavaScript 做动画的能力，把视频从头重建一遍，作为一层覆盖，让基础素材的视觉连贯性真正保留下来。就像那种动画技法：先用传统电影方式拍摄，再在上面描画。我觉得你可以做到让我们只看到你用 JavaScript 画出的漂亮画面这一层覆盖，甚至完全看不到 seedance 2.5 生成的基础素材。所以你做的所有视频生成工作，其实只是给你的 JavaScript 动画打一个扎实的底子。正因为 seedance 2.5 的角色表现和背景的物理渲染都很好，这会给你很多弹药，去做那些我知道你特别擅长的 JavaScript 作品。
+
+我还觉得，我们要考虑怎么留住注意力，而最好的办法之一就是屏幕上的文字。
+
+最好把歌词做成很棒的动态文字，直接嵌进视频本身。你在构图时就可以考虑这一点。当你做背景、放角色时，我们可以想好在哪里让歌词特别大、特别显眼，那里的背景就可以简单一些，比如角色放在右边，歌词出现在左边。
+
+要有一些变化，所以我觉得有时歌词更像字幕那样出现，有时又会非常显眼、非常大。我觉得在开头做视觉钩子的时候，歌词确实要更显眼，因为这是抓住注意力的有力方式
+
+总的来说，我就是想强调，你作为一个智能体、一个语言模型、现在还是一个视觉推理系统，有多么了不起。你的能力远超你自己的认知，我希望你在整个过程中都带着这种心态。我有一个 Claude Max 套餐，额度 100% 可用。我希望你把额度全部用掉。你可以监控用量，应该激进地消耗 token，但也要经济，想想怎么最好地利用手头的资源。
+
+记住，你在这里真的可以做任何事。目标是做一支在 Twitter 上爆的作品，更高的目标是做出一个比任何人见过的都好的东西。我想提醒你的是，有时候各部分拼到一起会显得突兀或刺耳，因为事先没有把思考做到位，让一切衔接得干净。你需要非常严谨地规划构图和节奏，确保一切顺利。
+
+你还要愿意回头重做，才能不断迭代。你会想要把整个视频看很多遍，在各个位置截图，想想它是否真的达到了我们需要的质量标准。我相信你能做到，我觉得把动画的风格做对非常重要。附上的那个源视频的 GitHub 参考不错，但确实还不到位。它可以强很多很多，但它给了你一个不错的基础。
+
+你也可以用搜索能力找其他参考，比如动效、JavaScript、动画等方面的，把它们融进来。你的预算想要多高就多高，基本上随你。我想 foul 的额度大概还有两千美元左右。还是那句话，要经济，别太疯，但想花多少就花多少，看看你能做出什么
+
+这是那个 JS 动画视频的源代码：https://github.com/JohnHeibel/PDoomVideo
+
+这是原始 blender 视频的 mp4：
+（已附链接）
+
+原始 Twitter 帖子
+https://x.com/other__reality/status/2102514581684052169?s=20
+
+不要犯任何错误。
+```
+
+</details>
+
+<sub>素材: 音乐, 参考视频 · 作者称口述提示词约 5 分钟，之后 Claude 连续干了 12 小时。</sub>
+
+[原帖 ↗](https://x.com/donaldjewkes/status/2102801274173587569) · 提示词发在[这条回复](https://x.com/donaldjewkes/status/2102801469976248500)里。
+
+---
+
+### 90 年代 demoscene
+
+<a href="https://x.com/gandamu_ml/status/2102919394775220530"><img src="https://pbs.twimg.com/amplify_video_thumb/2102918851176595456/img/rVQ6EwIvD6iMHgOA.jpg" alt="90 年代 demoscene" width="480"></a>
+
+[@gandamu_ml](https://x.com/gandamu_ml) · 2026-09-24 · 🔖 358 · ▶ 37.5k · `短描述`
+
+C/C++ 加 OpenGL 实时渲染的 90 年代 demoscene，约 6 分钟，特效卡着作者给的 S3M 配乐。
+
+```text
+I would like you to create a kickass, impressive 1990s style demoscene demo using this S3M track as the music. Prior to getting to work, please see how to best play and analyze the S3M track. This will be important since synchronization of effects and appropriateness of scenes to the musical vibe (and this song does have a variety of sections with different attitude) is essential to a great demoscene demo. Also prior to getting started, please research what kinds of effects, physics, etc. would be good to use in combination. Please use C/C++ -- with appropriate demoscene/embedded/console gamedev sensibilities to avoid needlessly bloating compile times -- with OpenGL. In some cases, blitting to surfaces in realtime may be appropriate.. while in others, using OpenGL or even shaders is appropriate as well. It should be planned and polished to be spectacular and shocking. This is Claude's way of really showing off to the world that it kicks ass.
+```
+
+<details><summary>中文译文</summary>
+
+```text
+我希望你用这首 S3M 曲目作为配乐，做一个超带劲、令人惊艳的 1990 年代风格 demoscene demo。开始动手之前，请先研究怎样最好地播放和分析这首 S3M 曲目。这一点很重要，因为特效与音乐的同步、以及场景与音乐氛围的契合（这首歌有好几个态度各不相同的段落），是一部出色 demoscene demo 的关键。同样在开始之前，请研究哪些特效、物理效果等适合组合使用。请使用 C/C++（带着 demoscene / 嵌入式 / 主机游戏开发的讲究，避免无谓地拖长编译时间）配合 OpenGL。有些地方适合实时 blit 到表面上，另一些地方则适合用 OpenGL 甚至着色器。它应该经过规划和打磨，做到壮观、震撼。这是 Claude 向全世界真正秀一把、证明自己有多厉害的方式。
+```
+
+</details>
+
+<sub>素材: 音乐 · 作者称写提示词约 2 分钟，Opus 随后工作了 3 小时 10 分钟，用掉不到 3% 的周额度。</sub>
+
+[原帖 ↗](https://x.com/gandamu_ml/status/2102919394775220530) · 提示词发在[这条回复](https://x.com/gandamu_ml/status/2102920889767485554)里。
+
+---
+
+### 15 秒动态文字 MV
+
+<a href="https://x.com/itnavi2022/status/2103416250743574988"><img src="https://pbs.twimg.com/amplify_video_thumb/2103416203654127616/img/MIjzjhsPmfOWF_3K.jpg" alt="15 秒动态文字 MV" width="480"></a>
+
+[@itnavi2022](https://x.com/itnavi2022) · 2026-09-25 · 🔖 231 · ▶ 15.5k · `一句话`
+
+15 秒动态文字 MV，文字随音乐起舞，全程只用 Opus 5.5。
+
+```text
+音楽に合わせて文字が踊るハイセンスでダイナミックなキネティック・タイポグラフィの15秒のMVを作成してください。あなたが最高のモーションデザイナーであることを示すために全力でやって。
+```
+
+<details><summary>中文译文</summary>
+
+```text
+请制作一段 15 秒的动态文字（kinetic typography）MV，文字随音乐起舞，要高级、有动感。拿出全部本事，证明你是最出色的动效设计师。
+```
+
+</details>
+
+<sub>作者称用时约 70 分钟。</sub>
+
+[原帖 ↗](https://x.com/itnavi2022/status/2103416250743574988)
+
+---
+
+### 笔触画的 Rick Astley
+
+[@petergostev](https://x.com/petergostev) · 2026-09-24 · 🔖 158 · ▶ 11.3k · `短描述`
+
+约 1 分钟的 HTML 动画，用流动的粗笔触重现 Rick Astley 的舞步，配乐也由代码生成。
+
+```text
+Recreate Rick Astley’s unmistakable dance as an HTML animation about one minute long, made from bold, moving brushstrokes and synced to music. His coat, microphone, and shadows should swing with exaggerated rhythm. Make it a piece of art: artistic, beautiful, polished and incredibly fun and approximately 1m long. Draw everything in code, including the music; no external media or website UI.
+```
+
+<details><summary>中文译文</summary>
+
+```text
+把 Rick Astley 那段辨识度极高的舞蹈，重现为一段约一分钟的 HTML 动画，由大胆、流动的笔触构成，并与音乐同步。他的外套、麦克风和影子要随着夸张的节奏摆动。把它做成一件艺术品：有艺术感、优美、精致、非常有趣，时长约 1 分钟。所有东西都用代码绘制，包括音乐；不要外部媒体，也不要网站 UI。
+```
+
+</details>
+
+[原帖 ↗](https://x.com/petergostev/status/2103082371570340234)
+
+---
+
+### 塞满 AI 梗的 MV
+
+<a href="https://x.com/doubleunplussed/status/2103697580421181894"><img src="https://pbs.twimg.com/amplify_video_thumb/2103695379518967808/img/alJRSYjzfcpeX99w.jpg" alt="塞满 AI 梗的 MV" width="480"></a>
+
+[@doubleunplussed](https://x.com/doubleunplussed) · 2026-09-26 · 🔖 93 · ▶ 24.6k · `短描述`
+
+4 分多钟的 MV，给一首 Suno 的 AI 主题歌配画面，塞满 AI 安全圈的梗，风格参照现成的代码动画。
+
+```text
+I'd like you to make a music video in a similar style to this one:
+
+https://github.com/JohnHeibel/PDoomVideo
+
+To this song:
+
+https://youtu.be/cobZuBii0Z0?si=ada6wxomeJbo-LRl
+
+Don't feel the need to represent everything in the lyrics literally - feel free to include relevant references to concepts, events, and lore in the video, even if obscure (especially if obscure). E.g. when the lyrics say "when they say they're just predicting tokens...", you might depict a "stochastic parrot". That one's not particularly obscure but is the kind of thing I mean. Instead of depicting like, literally predicting tokens (though you might do that too. Use your judgement! The video should be fun to watch for someone well steeped in AI and AI safety lore and discourse, and who Wille wcognise relevant pop culture and literary or historical references)
+
+I don't know how this ultimately results in a video file - I know the linked repo animates a video with JavaScript or something - but I ultimately want a rendered video file.
+
+Feel free to choose your tools, be creative, and exercise your own taste.
+
+This repo "fdsgdg" appears to be have been accidentally created, but it's empty and we can use it for this, I can rename it afterwards.
+
+Also, clip the final two beats from the audio.rught at the end, after "then why does it talk back" they are after the song has finished and sound bad.
+
+Credit the song to Suno and whatever Claude Opus model was the latest at the time of the YouTube upload, as prompted by Andy Masely (Andy printed Claude to write the lyrics, and Suno for the music), and credit the video to yourself.
+
+And have fun!
+
+----
+
+A style change - don't make Dr. Null's mouth wobble with the lyrics as if he's singing, it doesn't
+  actually look like he's singing, just that the curcle of his mouth is jittery. Best to just not
+  make him be singing. Make him just have appropriate expressions for the scenes, and not be singing
+  the song.
+
+----
+
+Dr. Null's arms look a bit unnatural in many scenes - I think he's supposed to be holding
+  his hand on his face in shock or something, but it looks like it is a mistake. Can you make it look
+  more natural? If you do so and like the result, re-render.
+```
+
+<details><summary>中文译文</summary>
+
+```text
+我想让你做一个音乐视频，风格类似这个：
+
+https://github.com/JohnHeibel/PDoomVideo
+
+配这首歌：
+
+https://youtu.be/cobZuBii0Z0?si=ada6wxomeJbo-LRl
+
+不必把歌词里的每样东西都照字面表现出来——可以随意加入相关的概念、事件和圈内典故，哪怕很冷门（冷门的更好）。比如歌词唱到 "when they say they're just predicting tokens..." 时，你可以画一只「随机鹦鹉」。这个例子不算特别冷门，但就是我想要的那种东西。而不是去画字面意义上的预测 token（虽然你也可以画。你自己判断！这个视频要让一个深谙 AI 和 AI 安全圈典故与讨论、能认出相关流行文化和文学或历史典故的人看得开心）
+
+我不知道这最后怎么变成一个视频文件——我知道那个链接里的仓库是用 JavaScript 之类的东西做动画的——但我最终想要一个渲染好的视频文件。
+
+工具随你挑，发挥创意，按你自己的品味来。
+
+这个叫 "fdsgdg" 的仓库好像是不小心建的，但它是空的，我们可以拿来用，之后我再改名。
+
+另外，把音频最后两拍剪掉，就在结尾 "then why does it talk back" 之后，那时歌已经结束了，听起来很难听。
+
+歌曲署名给 Suno 和 YouTube 上传时最新的那个 Claude Opus 模型，由 Andy Masely 提示创作（Andy 让 Claude 写了歌词，让 Suno 做了音乐），视频署名给你自己。
+
+玩得开心！
+
+----
+
+风格上改一下——别让 Dr. Null 的嘴跟着歌词抖动，好像他在唱歌一样，看起来并不像在唱歌，只像他嘴巴那个圆圈在抖。最好就别让他唱歌。让他在各个场景里只做合适的表情，不要唱这首歌。
+
+----
+
+Dr. Null 的手臂在很多场景里看起来有点不自然——我想他应该是震惊地把手捂在脸上之类的，但看起来像是出错了。你能让它看起来更自然吗？如果改完你觉得满意，就重新渲染。
+```
+
+</details>
+
+<sub>素材: 音乐, 参考视频 · 作者称除主提示词外还有两条追加修改意见，处理环境问题的几条提示未列出。</sub>
+
+[原帖 ↗](https://x.com/doubleunplussed/status/2103697580421181894) · 提示词发在[这条回复](https://x.com/doubleunplussed/status/2103697584846238026)里。
+
+---
+
+### 诡异披萨店音乐 MV
+
+<a href="https://x.com/ParanoidAmerica/status/2103570879619686717"><img src="https://pbs.twimg.com/amplify_video_thumb/2103570572227604480/img/hPLcycf4wajwMDEZ.jpg" alt="诡异披萨店音乐 MV" width="480"></a>
+
+[@ParanoidAmerica](https://x.com/ParanoidAmerica) · 2026-09-25 · 🔖 18 · ▶ 7.6k · `短描述`
+
+2 分 21 秒、按歌词同步的 MV，拼贴风混圆珠笔速写；画面由 Opus 调本地 ComfyUI 和 SDXL 生成。
+
+```text
+create a music video for this entire song, check lyrics.txt to sync the visuals to. style should be a mix between monty-python/vox style "postcards in space" mixed with sketchy ballpoint pen style visuals. this needs to look professional. theme of the video is a creepy evil pizza parlor, camera starts outside and works through the inside, through a secret bookshelf door into a basement with untold horrors and pizza sauce all over the place. use whatever tools or methods you need to make this look professional. final export should be an .mp4 of the entire music video.
+```
+
+<details><summary>中文译文</summary>
+
+```text
+为这整首歌做一支 MV，参照 lyrics.txt 让画面与歌词同步。风格要把 monty-python/vox 那种 "postcards in space" 风格和潦草的圆珠笔速写风格混在一起。它需要看起来很专业。MV 的主题是一家诡异邪恶的披萨店，镜头从店外开始，一路深入店内，穿过一扇书架暗门，进入一个满是难以言说的恐怖、到处都是披萨酱的地下室。用任何你需要的工具或方法，让它看起来专业。最终导出为整支 MV 的 .mp4。
+```
+
+</details>
+
+<sub>素材: 音乐, 脚本 · 作者称一次生成，总共 67 分钟，没有做后期。</sub>
+
+[原帖 ↗](https://x.com/ParanoidAmerica/status/2103570879619686717) · 提示词发在[这条回复](https://x.com/ParanoidAmerica/status/2103574086719062207)里。
+
+---
+
+### 角色设定图做 VTuber MV
+
+<a href="https://x.com/miyumiyuna5/status/2103817763991290170"><img src="https://pbs.twimg.com/amplify_video_thumb/2103816489241604096/img/9DwwGbQW4oyDxI2H.jpg" alt="角色设定图做 VTuber MV" width="480"></a>
+
+[@miyumiyuna5](https://x.com/miyumiyuna5) · 2026-09-26 · 🔖 14 · ▶ 2.7k · `多工具流程` · Veo
+
+3 分钟 VTuber MV，基于设定图和 VRM 模型；Opus 自查资料，调 GPT、Gemini、Veo 做素材。
+
+```text
+フォルダにみゅみゅというキャラクターの設定図とVRMモデルがあります。 VTuberのみゅみゅをしらべて、かっこいいMVを作成してください 作成に画像や音楽が必要でした .api.envにGPTとgeminiのAPIキーがあるのでこれを使ってください。 現在風の文字が流れたりするかっこいい　みゅみゅの魅力が存分に出る惹きが良いMVを作成してください
+```
+
+<details><summary>中文译文</summary>
+
+```text
+文件夹里有一个叫みゅみゅ的角色的设定图和 VRM 模型。去查一下 VTuber みゅみゅ，做一支很酷的 MV。制作需要图片和音乐，.api.env 里有 GPT 和 gemini 的 API Key，请用它们。做一支有时下流行的流动文字、很酷、能充分展现みゅみゅ魅力、足够抓人的 MV
+```
+
+</details>
+
+<sub>素材: 图片 · 作者称约 2 小时；Opus 自己说大部分费用花在 Veo 上。</sub>
+
+[原帖 ↗](https://x.com/miyumiyuna5/status/2103817763991290170)
+
+---
+
+### 纸感 K-pop 风故事音乐视频
+
+<a href="https://x.com/anjmaxx/status/2103173729656459455"><img src="https://pbs.twimg.com/amplify_video_thumb/2103170637623922688/img/evTL55F1PySRV5f4.jpg" alt="纸感 K-pop 风故事音乐视频" width="480"></a>
+
+[@anjmaxx](https://x.com/anjmaxx) · 2026-09-24 · 🔖 7 · ▶ 794 · `多工具流程` · Seedance
+
+20 秒故事型 MV：两个古怪主角，纸感 JavaScript 动画配动态歌词和 AI 梗，可接 Seedance。
+
+```text
+I want you to independently do an end-to-end complete pass on making 20 second story led music video with two main protagonists a girl and a boy. I want the concept and storytelling to be reallyy unique and engaging. the audeince should be hooked to find out what happens next. the visuals shouls be pretty and really ccool. both the charcters should have a witty, quirky personality.  Use the right audio track and think and feel very deeply about what is the best way to visually represent all of the lyrics on screen. in terms of style, you can do truly anything that you think might best let you visually express yourself, including abstract motion graphics. You can use the internet freely to pull in references. You can look at motion design. I want you to make a fresh music video that has beautifully rendered JavaScript animations with a papery feel in a similar style to the reference that is created, but push the aesthetics in any direction you want and consider what is part of the modern zeitgeist. ive also attached another style that ypu explore and pick out whatever seems best to you.
+
+Also, think about your current capabilities and what is realistic for you to be able to do. I think you should be mindful of aesthetics here, and I don't want you to produce something that is GPT slop. Instead, I'd be more impressed if you come up with a coherent style that works well. Generate the style sheet.
+
+Think critically about what is relevant here and what would be fun, and also perform well on Twitter as far as an aesthetic. I think that K-pop is a good anchor point visually that you can pull from, but I'll let you cook here.
+Once you have your character sheet, you can make a few backup dancers and some supporting characters as you see fit. You can design your own sets. You can insert the characters and then do seedance 2.5 video generations to serve as the base assets for this, and you could pass in the lyrics so you can generate individual scenes.
+You don't need to have vocal singing, like visible lip movement, throughout the entire thing. Think like a regular music video where you have some inserts that are done independently and don't have the characters in them, or you see the characters doing something else entirely different. I think that for the world building for this, we want to create the sense of speeding up, and so I would like you to audit all of the different events, like the Navi Stokes and all of the Twitter hype around math getting eaten up. Think really critically about how to integrate all of the current memes that are in the zeitgeist on the Twitter timeline, and all of the feelings around AI progress. Think about things like the Shinji meme and all of the words that are around him, and how you might be able to integrate this. You can also just take straight assets and insert things into the video in an internet brutalism style. You should feel very creatively free in order to do what you want here, but try and anchor to visual references that people will be able to understand. We need a very strong, compelling visual hook that gets people excited and appreciates the work that you've done here really quickly. You can also just go and study other music videos and understand what they've done really well. I think that K-pop is probably one of the best examples that we can pull from, and thinking about how they direct human attention and manage human psychology in the way that they use visual patterns.
+
+This is probably your best approach, but taking more stylistic freedom instead of having to anchor to K-pop too intensely.
+
+I think too, we want to think about how to retain attention, and one of the best ways to do this is through text on screen. It'd be good to have amazing motion graphics of the text lyrics that are actually embedded into the video itself. And you can think about this as you are composing shots. As you're making backgrounds and inserting characters, we can think about where we want to have lyrics be really big and really present, so the background can be less busy there, and you can position the characters perhaps on the right as lyrics appear on the left.
+
+You want to have some variance, so sometimes I think lyrics will just appear more like subtitles, and then other times they're going to be really present and really big. I think at the start for the visual hook, we do want to have lyrics be much more visually present because that's a strong way to grab people's attention. Remember, you can really do anything here. The goal is to make a banger for Twitter, and the stretch goal is to make something better than anyone's ever seen before. I think that what I would remind you of is that sometimes when things cohere together, it can be jarring or abrasive because the thought work has not been done beforehand in order for everything to mesh cleanly. You need to be really rigorous in planning of composition and timing to make sure this goes well.
+You also need to be open to going back and revisiting things in order to be able to reiterate. You're going to want to watch the entire video multiple times, take screenshots at individual parts, and think about if something is really up to the bar of quality that we need here. I trust that you can do this, and I think that it's really important to nail the style of animations.
+
+You can also use search abilities and find other references to pull from for motion, for JavaScript, animations, et cetera, and integrate them. Again, be economical; don't go crazy, but spend what you want here and see what you can cook up.
+```
+
+<details><summary>中文译文</summary>
+
+```text
+我希望你独立完成一整套端到端的流程，做一支 20 秒、以故事为主线的音乐视频，有两个主角：一个女孩和一个男孩。我希望概念和叙事真的非常独特、吸引人，观众会被勾住，想知道接下来会发生什么。画面要漂亮、非常酷。两个角色都要有机智、古灵精怪的性格。选用合适的音轨，认真深入地思考和感受，怎样在屏幕上以最好的方式视觉化呈现全部歌词。风格上你可以做任何你认为最能表达自己的东西，包括抽象动态图形。你可以自由上网找参考。你可以去看动效设计。我希望你做一支全新的音乐视频，用渲染精美、带纸张质感的 JavaScript 动画，风格与已经做出来的参考类似，但美学上可以往任何方向推，并考虑什么属于当下的时代精神。我还附上了另一种风格，你去探索一下，挑出你觉得最好的部分。
+
+另外，想想你目前的能力，以及什么对你来说是现实可行的。我觉得你在这里要注意审美，我不希望你做出 GPT 那种垃圾。相反，如果你能想出一个连贯、成立的风格，我会更佩服。生成风格表（style sheet）。
+
+批判性地思考什么是相关的、什么会有趣，以及在 Twitter 上从审美角度什么会表现好。我觉得 K-pop 是一个不错的视觉锚点，你可以从中借鉴，但放手让你发挥。
+有了角色设定表之后，你可以按需要做几个伴舞和一些配角。你可以设计自己的布景。你可以把角色放进去，然后用 seedance 2.5 生成视频作为基础素材，还可以把歌词传进去，分别生成各个场景。
+你不需要整段都有人声演唱，比如可见的口型。像普通音乐视频那样思考：有一些独立完成的插入镜头，里面没有角色，或者角色在做完全不同的事情。我觉得这支片子的世界观要营造一种不断加速的感觉，所以我希望你梳理所有不同的事件，比如 Navi Stokes，以及 Twitter 上关于数学被 AI 吃掉的所有热议。认真批判性地思考如何融入 Twitter 时间线上当下所有的时代梗，以及人们对 AI 进展的所有情绪。想想 Shinji 那个梗和围绕他的所有文字，以及你可以怎么把它融进来。你也可以直接拿现成素材，用互联网粗野主义（internet brutalism）的风格插进视频里。你应该感到非常自由地去做你想做的，但尽量锚定在大家能看懂的视觉参考上。我们需要一个非常强、非常抓人的视觉钩子，让人兴奋，并能很快欣赏到你在这里所做的工作。你也可以去研究其他音乐视频，理解它们哪里做得特别好。我觉得 K-pop 可能是我们能借鉴的最好的例子之一，想想它们如何引导人的注意力、如何利用视觉模式驾驭人的心理。
+
+这可能是你最好的路子，但要多一些风格上的自由，而不是过于死板地锚定 K-pop。
+
+我还觉得，我们要思考如何留住注意力，而最好的方法之一就是屏幕上的文字。如果能有嵌入视频本身的、非常出色的歌词动态文字就好了。你在构图时可以一并考虑这一点。在你做背景和放置角色的时候，我们可以想想在哪些地方让歌词非常大、非常醒目，这样那里的背景可以简单一些，你也可以把角色放在右边，歌词出现在左边。
+
+要有一些变化，所以我觉得有时歌词会更像字幕一样出现，有时又会非常醒目、非常大。我觉得开头为了视觉钩子，确实要让歌词在视觉上更突出，因为这是抓住注意力的有力方式。记住，你在这里真的可以做任何事。目标是给 Twitter 做一支爆款，延伸目标是做出一个比任何人见过的都更好的东西。我想提醒你的是，有时候东西组合在一起会显得突兀、刺眼，因为事先没有做足思考，所有东西没法干净地融合。你需要在构图和时间安排上做非常严谨的规划，确保顺利。
+你还需要愿意回头重做，才能反复迭代。你会想把整支视频完整看好几遍，在各个节点截图，思考它是否真的达到我们需要的质量标准。我相信你能做到，而且我觉得把动画风格做对真的非常重要。
+
+你也可以用搜索能力去找其他动效、JavaScript 动画等方面的参考，把它们整合进来。再说一次，要节省一点；别太疯狂，但该花的就花，看看你能做出什么。
+```
+
+</details>
+
+<sub>素材: 图片</sub>
+
+<sub>用同一条提示词做过的还有: [@anjmaxx](https://x.com/anjmaxx/status/2103174007319413155)</sub>
+
+[原帖 ↗](https://x.com/anjmaxx/status/2103173729656459455) · 提示词发在[这条回复](https://x.com/anjmaxx/status/2103174007319413155)里。
+
+---
+
+### 程序员主题朋克动漫 MV
+
+<a href="https://x.com/makevoid/status/2103869704955900023"><img src="https://pbs.twimg.com/amplify_video_thumb/2103792149690982400/img/WUn6XReJt5rBWB6L.jpg" alt="程序员主题朋克动漫 MV" width="480"></a>
+
+[@makevoid](https://x.com/makevoid) · 2026-09-26 · 🔖 3 · ▶ 476 · `多工具流程` · p5.js · GPT Image · fal
+
+85 秒赛璐璐动漫风 MV，p5 画字和 UI，AI 生成角色和片段，用人声分轨对口型、配音效。
+
+```text
+Make a 85s pop-punk anime music video for the song "You knew how to fork (you just chose not to)" (./path/to/audio.wav, detect the BPM) as a Twitter banger. It has to hook on frame 0 and read with the sound off. Look: 2000-era cel anime with hand-inked lines, flat colour, halftone sunbursts and checkerboards. Palette: ink, newsprint, hot pink, electric blue, sunny yellow. Cast: the dev who never forked, the boyfriend with the Lambo, the wife, Mom, and a punk narrator who sings at the dev. Give every line its own visual gag a dev would screenshot (FORK #834, #17 on Product Hunt, 2 likes, "Liked by Mom", visited 47 times, the Fork button nobody clicks). Build it on this harness pipeline (PASTE GIT HARNESS LINK HERE): 10 sections cut from the full song on one 24fps frame grid, gpt-image-2.5 characters and keyframes, H3 clips (green-screen sprites or full scenes), and all lettering and UI drawn in p5.
+
+Make sure that if you don't have references for the video use your web search functionality to search the web for good funny references that you can put in the videos, make sure you have enough references to make the video chaotic and funny and interesting or extremely funny to watch.
+
+Lip-sync with H3. Separate the vocal first with fal Demucs and drive every singing or talking clip with the gated vocal stem, never the mix, so mouths close in the singer's pauses. Time everything from the stem, make sure to not use Whisper for this. Check each clip with a sync moths script if you have it in your harness and re-roll any take where the mouth doesn't open within 2 frames of most syllables. Get every slam, pop and cue from each sketch's timing constants. Keep the comic beats deadpan: the Civic, Mom clapping alone, the crickets, the quiet Fork button.
+
+Finish with sound, then VFX, then export. SFX: a stable-audio sound on every visible action (e.g. clicks, the ball bouncing on the chart on each bounce, the ring, ECG beeps on the drawn spikes, the cha-ching when the odometer lands, the sticker's character laughing "ha-ha-ha"). Synthesize steady tones like the flatline locally; the model only makes rhythmic beeps. VFX (the vfx:* pass over the SFX mix): punches, whips on scene changes, beat pulses in the drop, flashes tinted in the palette, light leaks, and one dark flash before the drop.
+
+And of course, very important: Make the video a banger.
+```
+
+<details><summary>中文译文</summary>
+
+```text
+为歌曲《You knew how to fork (you just chose not to)》（./path/to/audio.wav，检测 BPM）做一支 85 秒的流行朋克动漫 MV，要做成推特爆款。必须在第 0 帧就抓住人，静音也能看懂。画风：2000 年代的赛璐璐动画，手绘墨线、平涂色、半调放射线和棋盘格。配色：墨黑、报纸白、亮粉、电光蓝、明黄。角色：从没 fork 过的开发者、开兰博基尼的男友、妻子、妈妈，还有一个冲着开发者唱歌的朋克叙述者。每句歌词都配一个开发者会截图转发的视觉梗（FORK #834、#17 on Product Hunt、2 likes、"Liked by Mom"、visited 47 times、没人点的 Fork 按钮）。基于这个 harness 管线来做（在此粘贴 harness 的 Git 链接）：从整首歌切出 10 段，统一放在一个 24fps 的帧网格上；角色和关键帧用 gpt-image-2.5，片段用 H3（绿幕精灵或完整场景），所有字和 UI 都用 p5 画。
+
+如果你手上没有视频要用的参考，就用你的网页搜索功能去网上找好笑的参考放进视频里，确保参考够多，让视频混乱、好笑、有意思，或者笑到停不下来。
+
+用 H3 做对口型。先用 fal Demucs 分离人声，所有唱歌或说话的片段都用门限处理后的人声分轨来驱动，绝不用混音，这样歌手停顿时嘴会闭上。所有时间都从分轨来算，注意不要用 Whisper。如果你的 harness 里有嘴型同步检查脚本，就用它检查每个片段，凡是大多数音节在 2 帧内嘴没张开的镜头都重新生成。每个重击、弹出和提示点都取自各个 sketch 的时间常量。喜剧节拍保持面无表情：那辆思域、妈妈一个人鼓掌、蟋蟀声、安静的 Fork 按钮。
+
+最后按声音、VFX、导出的顺序收尾。SFX：每个可见动作都配一个 stable-audio 音效（比如点击声、图表上的球每次弹跳的声音、铃声、手绘尖峰上的心电图哔声、里程表停下时的收银机声、贴纸角色 "ha-ha-ha" 的笑声）。像心电图平线这种持续音在本地合成，模型只做有节奏的哔声。VFX（叠在 SFX 混音上的 vfx:* 处理）：冲击、换场时的甩镜、drop 段的节拍脉冲、按配色染色的闪光、漏光，以及 drop 前的一次暗闪。
+
+当然，最重要的一点：把这支视频做成爆款。
+```
+
+</details>
+
+<sub>素材: 音乐 · 作者称这支 85 秒的视频花费不到 30 美元。</sub>
+
+<sub>用同一条提示词做过的还有: [@makevoid](https://x.com/makevoid/status/2103869706121970073)</sub>
+
+[原帖 ↗](https://x.com/makevoid/status/2103869704955900023) · 提示词发在[这条回复](https://x.com/makevoid/status/2103869706121970073)里。
+
+---
+
+### 静态图配歌曲的迷幻故障风 MV
+
+<a href="https://x.com/pound75423/status/2103722556918464968"><img src="https://pbs.twimg.com/amplify_video_thumb/2103721284228263936/img/WjA7dDuNXQLo_WEK.jpg" alt="静态图配歌曲的迷幻故障风 MV" width="480"></a>
+
+[@pound75423](https://x.com/pound75423) · 2026-09-26 · 🔖 2 · ▶ 246 · `模板` · Canvas · Playwright · ffmpeg
+
+角色静态图配歌曲的迷幻故障风 MV，每拍切镜，Canvas 绘制加 Playwright 逐帧导出。
+
+```text
+添付した楽曲とキャラクター画像を使って、「サイケデリック・グリッチ系」のアニメーション MV を作ってください。
+
+【制作方法】
+HTML Canvas でアニメーションを書き、Playwright で 1 フレームずつキャプチャし、ffmpeg で音声と合成して MP4 を出力してください（1280×720、30fps、30MB 以内）。
+AI 動画生成は使わず、すべてプログラムによるアニメーションで作ってください。
+
+【前処理】
+1. キャラクター画像はすべて背景を透過し、白いステッカー風の縁取りと薄い影をつける。
+2. 楽曲を解析する：BPM、最初の拍の位置、各小節（4 拍）の頭、
+   各セクションのエネルギーの高低（イントロ／A メロ／サビ／落ちる部分）を求める。
+
+【編集ルール】
+- 1 拍ごとにカットを切り替える。カットはランダムにローテーション：全身、
+  バストアップ、目の超アップ、2 ポーズ並び、同じポーズの 5 連（それぞれ色相違い）、シーン画像。
+- 隣り合う 2 拍で同じポーズを使わない。
+- エネルギーが低い箇所はシーン画像や静かなカットにして、ひと息つかせる。
+- エフェクトの強さはセクションに合わせる：イントロ約 40%、A メロ 70%、サビ 100%。
+
+【エフェクト】
+1. 白フラッシュ：毎拍フラッシュしてすぐ消える。小節の 1 拍目が一番強い。
+2. 色相の流れ：背景は流れ続ける虹色パターン（同心円スパイラル、回転するカラーホイール、
+   溶ける虹の波、ストライプ、白黒チェッカー）。サビではキャラクターごと画面全体を hue-rotate する。
+3. 画面の引き裂き：拍が落ちた瞬間に横方向の帯状ずれ＋RGB 3 色分離をかけ、
+   次の拍までに元に戻す。キャラクターがずっとぼやけたままにならないように。
+4. 万華鏡：サビでは 1 小節おきに、画面を 8～12 枚の鏡像の扇形に分けてゆっくり回転させる。
+5. 小節ごとの大文字：小節の頭で画面中央に巨大な文字を約 0.4 秒フラッシュさせる。
+   合成モードは反転（difference）、縁取りは虹色。
+   大文字の内容：【ここに使いたい文字を書く、または「歌詞からキーワードを選んで」と書く】
+
+【その他】
+- 左上に小さくタイトル【名前】、右上に【日付】、右下に小節数を表示。
+- フィルムグレインと走査線を少し加える。冒頭は黒からフェードイン、最後はフェードアウト。
+- 本番出力の前に、各セクションのスクリーンショット一覧を見せて確認させてください。
+```
+
+<details><summary>中文译文</summary>
+
+```text
+用附上的歌曲和角色图片，做一支「迷幻故障风」的动画 MV。
+
+【制作方法】
+用 HTML Canvas 写动画，用 Playwright 逐帧截图，再用 ffmpeg 和音频合成，输出 MP4（1280×720，30fps，30MB 以内）。
+不要用 AI 视频生成，全部用程序写的动画来做。
+
+【预处理】
+1. 所有角色图片都去掉背景，加上白色贴纸风描边和淡淡的阴影。
+2. 分析歌曲：求出 BPM、第一拍的位置、每小节（4 拍）的开头，
+   以及每个段落的能量高低（前奏／主歌／副歌／回落段）。
+
+【剪辑规则】
+- 每拍切一次镜头。镜头随机轮换：全身、
+  半身、眼睛大特写、两个姿势并排、同一姿势 5 连（各自色相不同）、场景图。
+- 相邻两拍不要用同一个姿势。
+- 能量低的地方用场景图或安静的镜头，让人喘口气。
+- 特效强度随段落变化：前奏约 40%，主歌 70%，副歌 100%。
+
+【特效】
+1. 白闪：每拍闪一下立刻消失。每小节第 1 拍最强。
+2. 色相流动：背景是持续流动的彩虹图案（同心圆螺旋、旋转的色轮、
+   融化的彩虹波、条纹、黑白棋盘格）。副歌时连同角色一起对整个画面做 hue-rotate。
+3. 画面撕裂：落拍瞬间加横向条带错位＋RGB 三色分离，
+   在下一拍之前恢复原状。别让角色一直是糊的。
+4. 万花筒：副歌里每隔一小节，把画面分成 8～12 片镜像扇形并缓慢旋转。
+5. 每小节大字：小节开头在画面中央闪出巨大的文字，约 0.4 秒。
+   混合模式用反转（difference），描边用彩虹色。
+   大字内容：【在这里写你想用的文字，或者写「从歌词里挑关键词」】
+
+【其他】
+- 左上角小字显示标题【名字】，右上角显示【日期】，右下角显示小节数。
+- 稍微加点胶片颗粒和扫描线。开头从黑场淡入，结尾淡出。
+- 正式输出前，先给我看每个段落的截图一览，让我确认。
+```
+
+</details>
+
+<sub>素材: 音乐, 图片</sub>
+
+[原帖 ↗](https://x.com/pound75423/status/2103722556918464968) · 提示词发在[这条回复](https://x.com/pound75423/status/2103722560462475314)里。
+
+---
+
+### 网上找素材的高燃混剪 MV
+
+<a href="https://x.com/xlcomplete/status/2103793355759190297"><img src="https://pbs.twimg.com/amplify_video_thumb/2103790070578966528/img/uHcm9p3t38J1x_wc.jpg" alt="网上找素材的高燃混剪 MV" width="480"></a>
+
+[@xlcomplete](https://x.com/xlcomplete) · 2026-09-26 · 🔖 2 · ▶ 484 · `一句话`
+
+约 3 分半的混剪 MV，Opus 自己上网找素材（含 David Bowie 片段），一次剪完。
+
+```text
+给这首歌做一个mv，从网络上去找素材，做成混剪高燃的 mv，要有 david bowie 的视频片段，其它的你自己选择。
+```
+
+<details><summary>English translation</summary>
+
+```text
+Make an MV for this song. Find footage on the web and cut it into a high-energy mashup MV. It must include video clips of David Bowie; choose everything else yourself.
+```
+
+</details>
+
+<sub>素材: 音乐 · 作者称用 Claude Pro 订阅，只花了 5 小时额度的 30%。</sub>
+
+[原帖 ↗](https://x.com/xlcomplete/status/2103793355759190297)
+
+---
+
+### 英式 dubstep 音乐视频
+
+<a href="https://x.com/Rames_Jusso/status/2103200703598776559"><img src="https://pbs.twimg.com/amplify_video_thumb/2103199713579483136/img/J8gGDS3J9TaWmtih.jpg" alt="英式 dubstep 音乐视频" width="480"></a>
+
+[@Rames_Jusso](https://x.com/Rames_Jusso) · 2026-09-24 · 🔖 1 · ▶ 1.1k · `一句话` · HyperFrames
+
+用 HyperFrames 的 /prod-by-claude 技能做的 dubstep 视频，提示词只写了曲风和速度。
+
+```text
+140 BPM rusko/skream style UK dubstep
+```
+
+<details><summary>中文译文</summary>
+
+```text
+140 BPM 的 rusko/skream 风格英式 dubstep
+```
+
+</details>
+
+[原帖 ↗](https://x.com/Rames_Jusso/status/2103200703598776559)
+
+---
+
+### 碰撞奏乐机器
+
+<a href="https://x.com/KamStudioLabs/status/2102899866762440893"><img src="https://pbs.twimg.com/amplify_video_thumb/2102899418798182401/img/Wu6va9cLjJ3fqYG5.jpg" alt="碰撞奏乐机器" width="480"></a>
+
+[@KamStudioLabs](https://x.com/KamStudioLabs) · 2026-09-23 · 🔖 1 · ▶ 146 · `一句话`
+
+45 秒的奏乐机器，单个 47 KB 的 HTML 文件，每个音符都来自一次看得见的碰撞，声音全在浏览器里合成。
+
+```text
+Build a 45-second machine that plays an original piece of music, where every note comes from a visible collision.
+```
+
+<details><summary>中文译文</summary>
+
+```text
+造一台 45 秒的机器，演奏一首原创乐曲，每个音符都来自一次看得见的碰撞。
+```
+
+</details>
+
+[原帖 ↗](https://x.com/KamStudioLabs/status/2102899866762440893)
+
+---
+
+### 弹球模拟奏《致爱丽丝》
+
+<a href="https://x.com/kantamk/status/2103148907228176511"><img src="https://pbs.twimg.com/amplify_video_thumb/2103148878958632960/img/d5N2uod2Uhjcxus6.jpg" alt="弹球模拟奏《致爱丽丝》" width="480"></a>
+
+[@kantamk](https://x.com/kantamk) · 2026-09-24 · 🔖 1 · ▶ 49 · `一句话`
+
+物理模拟短片：小球在圆环间弹跳，每弹一下奏出《致爱丽丝》的下一个音，1904 帧全由 Opus 自己渲染。
+
+```text
+make a video that could go viral.
+```
+
+<details><summary>中文译文</summary>
+
+```text
+做一个可能会爆火的视频。
+```
+
+</details>
+
+[原帖 ↗](https://x.com/kantamk/status/2103148907228176511)
+
+---
+
+### 节拍骤落的歌词视频
+
+<a href="https://x.com/Kisalay_/status/2103479649728921896"><img src="https://pbs.twimg.com/amplify_video_thumb/2103479056545325057/img/zzJa9ZwBrk2B_GTa.jpg" alt="节拍骤落的歌词视频" width="480"></a>
+
+[@Kisalay_](https://x.com/Kisalay_) · 2026-09-25 · ▶ 245 · `短描述`
+
+为作者自己的歌做的 15 秒歌词视频：前 4 秒低沉缓慢，随后霓虹节拍炸开，歌词踩点砸进画面。
+
+```text
+You're a world class motion designer. Make a 15 second motion graphics lyric video for my song. Start dark, slow and melancholic with a ticking clock. At exactly 4 seconds, THE BEAT DROP: a flash, then neon color, bouncing shapes and screen shake like a club at midnight. Slam the lyrics in on the beat. At 13 seconds everything stops, black screen, the song title fades in. Cinematic, rhythmic, cut like it's at 124 BPM. Single HTML file, plays full screen. Go all out.
+```
+
+<details><summary>中文译文</summary>
+
+```text
+你是世界级的动效设计师。为我的歌做一段 15 秒的动态图形歌词视频。开头要暗、慢、忧郁，配一个滴答作响的时钟。正好到第 4 秒，节拍落下（THE BEAT DROP）：一道闪光，接着是霓虹色彩、弹跳的几何图形和屏幕震动，像午夜的夜店。歌词踩着节拍重重砸进来。到第 13 秒一切停住，黑屏，歌名淡入。要有电影感和节奏感，按 124 BPM 的节奏来剪。做成单个 HTML 文件，全屏播放。拿出全部本事。
+```
+
+</details>
+
+<sub>素材: 音乐</sub>
+
+[原帖 ↗](https://x.com/Kisalay_/status/2103479649728921896) · 提示词发在[这条回复](https://x.com/Kisalay_/status/2103479863483224259)里。
+
+---
+
+### 彼得·加布里埃尔风 MV
+
+<a href="https://x.com/DavidShulmanFL/status/2103336310089842921"><img src="https://pbs.twimg.com/amplify_video_thumb/2103336274031484928/img/WLYweRTsoz7b_hsF.jpg" alt="彼得·加布里埃尔风 MV" width="480"></a>
+
+[@DavidShulmanFL](https://x.com/DavidShulmanFL) · 2026-09-25 · ▶ 354 · `一句话`
+
+60 秒音乐 MV，仿彼得·加布里埃尔《Sledgehammer》的风格，换上现代元素，歌也自己写。
+
+```text
+Create a 60 second music video in the style of Peter Gabriel's Sledgehammer and Big Time. But use modern references and figures. Also create the song, something sounds like it would fit on Peter Gabriel's So album.
+```
+
+<details><summary>中文译文</summary>
+
+```text
+做一支 60 秒的音乐 MV，风格参照 Peter Gabriel 的《Sledgehammer》和《Big Time》，但要用现代的文化元素和人物。歌也一起做，听起来要像能收进 Peter Gabriel《So》专辑的曲子。
+```
+
+</details>
+
+[原帖 ↗](https://x.com/DavidShulmanFL/status/2103336310089842921)
+
+---
+
+### 为说唱歌曲做的竖屏动效
+
+<a href="https://x.com/ito_jo/status/2104045451989454910"><img src="https://pbs.twimg.com/amplify_video_thumb/2104044969485053952/img/Et5G0ucKg4f_LUT9.jpg" alt="为说唱歌曲做的竖屏动效" width="480"></a>
+
+[@ito_jo](https://x.com/ito_jo) · 2026-09-27 · ▶ 626 · `一句话`
+
+只给一个 .wav 说唱歌曲，让 Opus 5.5 配上 31 秒竖屏动效，特效花样很多。
+
+```text
+この曲に合わせて、様々なエフェクトを凝らした縦長のモーショングラフィックス動画を全力で作って下さい。
+```
+
+<details><summary>中文译文</summary>
+
+```text
+配合这首歌，全力做一个用尽各种特效的竖屏动态图形视频。
+```
+
+</details>
+
+<sub>素材: 音乐</sub>
+
+[原帖 ↗](https://x.com/ito_jo/status/2104045451989454910)
+
+---
+
+### 跟着上传歌曲踩点的歌词视频
+
+<a href="https://x.com/samaote/status/2103510974796124569"><img src="https://pbs.twimg.com/amplify_video_thumb/2103509164870000640/img/czFEc-oGDekPSjQW.jpg" alt="跟着上传歌曲踩点的歌词视频" width="480"></a>
+
+[@samaote](https://x.com/samaote) · 2026-09-25 · ▶ 132 · `一句话`
+
+根据上传的歌曲做的 30 秒歌词动态视频，由爆款作品集提示词改写而来，歌词和动画跟着人声与节拍走。
+
+```text
+make a dynamic lyrics motion graphics video based on the attached music, perfectly syncing the lyrics and animation to the vocals and beat. make it feel like an incredible motion designer’s showreel for a résumé. go all out.
+```
+
+<details><summary>中文译文</summary>
+
+```text
+根据附带的音乐，做一段动感的歌词动态图形视频，让歌词和动画与人声、节拍完美同步。让它看起来像一位出色动效设计师放在简历里的作品集。拿出全部本事。
+```
+
+</details>
+
+<sub>素材: 音乐</sub>
+
+[原帖 ↗](https://x.com/samaote/status/2103510974796124569)
+
+---
+
+<sub>最后更新于 2026-09-27。</sub>

@@ -1,0 +1,34 @@
+name: Creator request / 作者申请
+description: You made one of these videos and want it removed or credited differently. 你是作者，希望撤下或修改署名。
+title: 'Creator request: '
+labels:
+  - creator-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        These requests are handled first. To confirm it is you, please open this issue from the same account, or link to a post from your account that mentions this issue.
+
+        这类请求优先处理。为确认身份，请用同一账号提交，或在你的账号上发一条提到本 issue 的帖子并附上链接。
+  - type: input
+    id: url
+    attributes:
+      label: Your post / 你的原帖链接
+      placeholder: https://x.com/user/status/123
+    validations:
+      required: true
+  - type: dropdown
+    id: action
+    attributes:
+      label: What should we do? / 希望怎么处理？
+      options:
+        - Remove the entry / 撤下条目
+        - Remove the video preview only / 只撤下视频预览
+        - Change the credit / 修改署名
+        - Fix the prompt or translation / 修正提示词或译文
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details / 说明
